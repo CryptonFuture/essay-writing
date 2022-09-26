@@ -16,14 +16,15 @@ import WhyChooseUs from '../Pages/innerPages/WhyChooseUs/WhyChooseUs'
 import Home from '../Pages/view/Home'
 import Order from '../Pages/innerPages/Order/Order'
 import Blog from '../Pages/innerPages/Blog/Blog'
-import DissertationWritingServices from '../Pages/innerPages/DissertationWriting/DissertationWritingServices'
+import DissertationAbstractWritingServices from '../Pages/innerPages/DissertationWriting/DissertationAbstractWritingServices'
+import DissertationChapterWritingServices from '../Pages/innerPages/DissertationWriting/DissertationChapterWritingServices'
 
 const Routers = () => {
     return (
         <>
             <Router>
                 <Routes>
-                    <Route path='/' element={<Home />} />
+                    <Route path='/' element={<DissertationAbstractWritingServices />} />
                     <Route path='/about-us' element={<AboutsUs />} />
                     <Route path='/faqs' element={<Faqs />} />
                     <Route path='/how-it-work' element={<HowItWork />} />
@@ -39,7 +40,6 @@ const Routers = () => {
                     <Route path='/terms-us' element={<TermUs />} />
                     <Route path='/order' element={<Order />} />
                     <Route path='/blog' element={<Blog />} />
-                    {/* <Route path='/DissertationWritingServices' element={<DissertationWritingServices />} /> */}
                 </Routes>
             </Router>
         </>
