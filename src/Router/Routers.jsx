@@ -17,13 +17,14 @@ import Home from '../Pages/view/Home'
 import Order from '../Pages/innerPages/Order/Order'
 import Blog from '../Pages/innerPages/Blog/Blog'
 import DissertationWritingServices from '../Pages/innerPages/DissertationWriting/DissertationWritingServices'
+import BuydissertationUK from '../Pages/innerPages/DissertationWriting/BuydissertationUK'
 
 const Routers = () => {
     return (
         <>
             <Router>
                 <Routes>
-                    <Route path='/' element={<Home />} />
+                    <Route path='/' element={<BuydissertationUK />} />
                     <Route path='/about-us' element={<AboutsUs />} />
                     <Route path='/faqs' element={<Faqs />} />
                     <Route path='/how-it-work' element={<HowItWork />} />
