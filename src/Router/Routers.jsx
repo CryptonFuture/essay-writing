@@ -17,13 +17,15 @@ import Home from '../Pages/view/Home'
 import Order from '../Pages/innerPages/Order/Order'
 import Blog from '../Pages/innerPages/Blog/Blog'
 import DissertationWritingServices from '../Pages/innerPages/DissertationWriting/DissertationWritingServices'
-
-const Routers = () => {
-    return (
-        <>
-            <Router>
+import CheapdissertationwritingservicesinUK from '../Pages/innerPages/DissertationWriting/CheapdissertationwritingservicesinUK'
+import Dissertationconclusionwritingservice from '../Pages/innerPages/DissertationWriting/Dissertationconclusionwritingservice'      
+const Routers = () => { 
+        return(        
+               <>
+               <Router>
                 <Routes>
-                    <Route path='/' element={<Home />} />
+                <Route path='/' element={<Dissertationconclusionwritingservice />}/>
+                    {/* <Route path='/' element={<CheapdissertationwritingservicesinUK />}/> */}
                     <Route path='/about-us' element={<AboutsUs />} />
                     <Route path='/faqs' element={<Faqs />} />
                     <Route path='/how-it-work' element={<HowItWork />} />
@@ -39,7 +41,6 @@ const Routers = () => {
                     <Route path='/terms-us' element={<TermUs />} />
                     <Route path='/order' element={<Order />} />
                     <Route path='/blog' element={<Blog />} />
-                    {/* <Route path='/DissertationWritingServices' element={<DissertationWritingServices />} /> */}
                 </Routes>
             </Router>
         </>
