@@ -25,6 +25,11 @@ body {
   background-attachment: fixed;
 } */
 
+.list_style
+{
+  list-style-type: square;
+}
+
 .img-logo {
   width: 100%;
   max-width: 150px;
