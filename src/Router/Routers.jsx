@@ -18,13 +18,16 @@ import Order from '../Pages/innerPages/Order/Order'
 import Blog from '../Pages/innerPages/Blog/Blog'
 import DissertationWritingServices from '../Pages/innerPages/DissertationWriting/DissertationWritingServices'
 import BuydissertationUK from '../Pages/innerPages/DissertationWriting/BuydissertationUK'
-
+import Cheaplawdissertationwritingservice from '../Pages/innerPages/DissertationWriting/Cheaplawdissertationwritingservice'
+import PhDQualitativeDataAnalysisservices from '../Pages/innerPages/DissertationWriting/PhDQualitativeDataAnalysisservices'
 const Routers = () => {
     return (
         <>
             <Router>
                 <Routes>
-                    <Route path='/' element={<BuydissertationUK />} />
+                <Route path='/' element={<PhDQualitativeDataAnalysisservices />} />
+                {/* <Route path='/' element={<Cheaplawdissertationwritingservice />} /> */}
+                    {/* <Route path='/' element={<BuydissertationUK />} /> */}
                     <Route path='/about-us' element={<AboutsUs />} />
                     <Route path='/faqs' element={<Faqs />} />
                     <Route path='/how-it-work' element={<HowItWork />} />
