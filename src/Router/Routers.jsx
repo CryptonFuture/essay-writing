@@ -20,13 +20,15 @@ import DissertationWritingServices from '../Pages/innerPages/DissertationWriting
 import CheapdissertationwritingservicesinUK from '../Pages/innerPages/DissertationWriting/CheapdissertationwritingservicesinUK'
 import Dissertationconclusionwritingservice from '../Pages/innerPages/DissertationWriting/Dissertationconclusionwritingservice'      
 import DissertationFormattingService from '../Pages/innerPages/DissertationWriting/DissertationFormattingService'
+import DissertationMethodologyHelp from '../Pages/innerPages/DissertationWriting/DissertationMethodologyHelp'
 const Routers = () => { 
         return(        
                <>
                <Router>
                 <Routes>
+                <Route path='/' element={<DissertationMethodologyHelp />}/>
                 {/* <Route path= '/' element={<DissertationFormattingService />}/> */}
-                <Route path='/' element={<Dissertationconclusionwritingservice />}/>
+                {/* <Route path='/' element={<Dissertationconclusionwritingservice />}/> */}
                     {/* <Route path='/' element={<CheapdissertationwritingservicesinUK />}/> */}
                     <Route path='/about-us' element={<AboutsUs />} />
                     <Route path='/faqs' element={<Faqs />} />
