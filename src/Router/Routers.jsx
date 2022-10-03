@@ -16,18 +16,46 @@ import WhyChooseUs from '../Pages/innerPages/WhyChooseUs/WhyChooseUs'
 import Home from '../Pages/view/Home'
 import Order from '../Pages/innerPages/Order/Order'
 import Blog from '../Pages/innerPages/Blog/Blog'
-import DissertationWritingServices from '../Pages/innerPages/DissertationWriting/DissertationWritingServices'
+import BuydissertationUK from '../Pages/innerPages/DissertationWriting/BuydissertationUK'
 import CheapdissertationwritingservicesinUK from '../Pages/innerPages/DissertationWriting/CheapdissertationwritingservicesinUK'
-import Dissertationconclusionwritingservice from '../Pages/innerPages/DissertationWriting/Dissertationconclusionwritingservice'      
+import Cheaplawdissertationwritingservice from '../Pages/innerPages/DissertationWriting/Cheaplawdissertationwritingservice'
+import DissertationAbstractWritingServices from '../Pages/innerPages/DissertationWriting/DissertationAbstractWritingServices'
+import DissertationChapterWritingServices from '../Pages/innerPages/DissertationWriting/DissertationChapterWritingServices'
+// import Dissertationconclusionwritingservice from '../Pages/innerPages/DissertationWriting/DissertationDiscussionWritingServices'
+import DissertationFormattingService from '../Pages/innerPages/DissertationWriting/DissertationFormattingService'
+import DissertationIntroductionWritingService from '../Pages/innerPages/DissertationWriting/DissertationIntroductionWritingService'
+import DissertationMethodologyHelp from '../Pages/innerPages/DissertationWriting/DissertationMethodologyHelp'
+import DissertationPresentationWritingServices from '../Pages/innerPages/DissertationWriting/DissertationPresentationWritingServices'
+import OnlineDissertationHelp from '../Pages/innerPages/DissertationWriting/OnlineDissertationHelp'
+import PhDQualitativeDataAnalysisservices from '../Pages/innerPages/DissertationWriting/PhDQualitativeDataAnalysisservices'
+import BlogDetails from '../Pages/innerPages/BlogDetails/BlogDetails'
+import Dissertationconclusionwritingservice from '../Pages/innerPages/DissertationWriting/Dissertationconclusionwritingservice'
+import LiteratureReviewHelp from '../Pages/innerPages/DissertationWriting/LiteratureReviewHelp'
+
+
 const Routers = () => { 
         return(        
                <>
                <Router>
                 <Routes>
-                <Route path='/' element={<DissertationMethodologyHelp />}/>
+                <Route path='/' element={<LiteratureReviewHelp />}/>
                 {/* <Route path= '/' element={<DissertationFormattingService />}/> */}
                 {/* <Route path='/' element={<Dissertationconclusionwritingservice />}/> */}
                     {/* <Route path='/' element={<CheapdissertationwritingservicesinUK />}/> */}
+                    <Route path='/BuydissertationUK' element={<BuydissertationUK />} />
+                    <Route path='/CheapdissertationwritingservicesinUK' element={<CheapdissertationwritingservicesinUK />} />
+                    <Route path='/Cheaplawdissertationwritingservice' element={<Cheaplawdissertationwritingservice />} />
+                    <Route path='/DissertationAbstractWritingServices' element={<DissertationAbstractWritingServices />} />
+                    <Route path='/DissertationChapterWritingServices' element={<DissertationChapterWritingServices />} />
+                    <Route path='/Dissertationconclusionwritingservice' element={<Dissertationconclusionwritingservice />} />
+                    <Route path='/DissertationFormattingService' element={<DissertationFormattingService />} />
+                    <Route path='/DissertationIntroductionWritingService' element={<DissertationIntroductionWritingService />} />
+                    <Route path='/DissertationMethodologyHelp' element={<DissertationMethodologyHelp />} />
+                    <Route path='/DissertationPresentationWritingServices' element={<DissertationPresentationWritingServices />} />
+                    <Route path='/OnlineDissertationHelp' element={<OnlineDissertationHelp />} />
+                    <Route path='/PhDQualitativeDataAnalysisservices' element={<PhDQualitativeDataAnalysisservices />} />
+                    <Route path='/LiteratureReviewHelp' element={<LiteratureReviewHelp />} />
+
                     <Route path='/about-us' element={<AboutsUs />} />
                     <Route path='/faqs' element={<Faqs />} />
                     <Route path='/how-it-work' element={<HowItWork />} />

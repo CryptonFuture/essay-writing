@@ -8,14 +8,23 @@ const ListGroupCard = () => {
             <Card className="card-transparent">
                 <Card.Body className='mt-3'>
                     <Card.Title>
-                        <h3 className='fw-bold text-center'> Price Calculate</h3>
+                        <h3 className='fw-bold text-center'>Our Freebies</h3>
                     </Card.Title>
                     <Card.Text className='p-2'>
                         <ListGroup variant="flush" >
                             <ListGroup.Item className='lists-groups'>
                                 <img src={check} alt="" className='img-size' />
                                 <span className='font-sizes ms-2 fw-bolder'>
-                                    Originality Report
+                                    Limitless Amendments                                
+                                    </span>
+
+                                <span className='color-green float-end ms-2 fonts'>FREE</span>
+                                <span className='color-grey float-end fonts'><s>$15.99</s></span>
+                            </ListGroup.Item>
+                            <ListGroup.Item className='lists-groups mt-3'>
+                                <img src={check} alt="" className='img-size' />
+                                <span className='font-sizes ms-2 fw-bolder'>
+                                    Bibliography
                                 </span>
 
                                 <span className='color-green float-end ms-2 fonts'>FREE</span>
@@ -24,7 +33,7 @@ const ListGroupCard = () => {
                             <ListGroup.Item className='lists-groups mt-3'>
                                 <img src={check} alt="" className='img-size' />
                                 <span className='font-sizes ms-2 fw-bolder'>
-                                    Originality Report
+                                    Outline
                                 </span>
 
                                 <span className='color-green float-end ms-2 fonts'>FREE</span>
@@ -33,7 +42,7 @@ const ListGroupCard = () => {
                             <ListGroup.Item className='lists-groups mt-3'>
                                 <img src={check} alt="" className='img-size' />
                                 <span className='font-sizes ms-2 fw-bolder'>
-                                    Originality Report
+                                    Title page
                                 </span>
 
                                 <span className='color-green float-end ms-2 fonts'>FREE</span>
@@ -42,16 +51,7 @@ const ListGroupCard = () => {
                             <ListGroup.Item className='lists-groups mt-3'>
                                 <img src={check} alt="" className='img-size' />
                                 <span className='font-sizes ms-2 fw-bolder'>
-                                    Originality Report
-                                </span>
-
-                                <span className='color-green float-end ms-2 fonts'>FREE</span>
-                                <span className='color-grey float-end fonts'><s>$15.99</s></span>
-                            </ListGroup.Item>
-                            <ListGroup.Item className='lists-groups mt-3'>
-                                <img src={check} alt="" className='img-size' />
-                                <span className='font-sizes ms-2 fw-bolder'>
-                                    Originality Report
+                                    Formatting
                                 </span>
 
                                 <span className='color-green float-end ms-2 fonts'>FREE</span>
@@ -61,7 +61,7 @@ const ListGroupCard = () => {
                             <ListGroup.Item className='lists-groups mt-3'>
                                 <img src={check} alt="" className='img-size' />
                                 <span className='font-sizes ms-2 fw-bolder'>
-                                    Originality Report
+                                    Plagiarism Report
                                 </span>
 
                                 <span className='color-green float-end ms-2 fonts'>FREE</span>
@@ -69,7 +69,7 @@ const ListGroupCard = () => {
                             </ListGroup.Item>
                         </ListGroup>
                         <div className='text-center mt-3'>
-                            <span className='color-royal-blue'>Get all these features for  </span>  <span className='fonts ms-2'>$15.99</span> <span className='fonts color-green ms-2'>FREE</span>
+                            <span className='color-royal-blue'>All these features are  </span>  <span className='fonts color-green ms-2'>FREE</span>
                         </div>
                         <div className='d-flex flex-row justify-content-center mt-3'>
                             <Button className='btn-bg-color padds'>

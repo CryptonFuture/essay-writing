@@ -16,9 +16,7 @@ body {
   margin-bottom: 10% !important; 
 }
 
-.mega_menu_li {
-  border-right: 1px solid lightgray;
-}
+
 
 /* .img {
   position: absolute !important;
@@ -84,11 +82,13 @@ body {
   max-width: 300px !important;
 }
 
-
+.writer_month {
+  font-size: 14px;
+}
 
 .cards-1 {
   padding: 10px;
-  margin-top: 20%;
+  margin-top: 15% !important;
   background: linear-gradient(to right, rgba(241, 237, 235, 0.9), rgba(245, 246, 252, 0.9)) !important;
   /* color: rgba(255,255,255); */
   /* opacity: 0.9; */
@@ -487,7 +487,7 @@ body {
 }
 
 .font-sizes {
-  font-size: 12px;
+  font-size: 18px;
 }
 
 
@@ -847,10 +847,10 @@ body {
 
 }
 
-.font-sizes {
+/* .font-sizes {
   font-size: 16px !important;
   max-width: 500px;
-}
+} */
 
 .padds {
   padding: 8px 30px !important;
@@ -1220,9 +1220,9 @@ body {
   background-color: #ebedfc;
 }
 
-.font-sizes {
+/* .font-sizes {
   font-size: 12px !important;
-}
+} */
 
 .footer-line {
   border-top: 1px solid white !important
@@ -1237,7 +1237,7 @@ body {
 }
 
 .marg-tp {
-  margin-top: 20% !important;
+  margin-top: 15% !important;
 
 }
 
@@ -1910,6 +1910,349 @@ td {
   font-size: 12px;
   font-weight: bold;
 }
+
+.mega_menu {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.megamenu {
+  position: static;
+}
+
+.dropdown-menu .megamenu {
+  width: 100%;
+}
+
+.font-link {
+  font-size: 12px !important;
+}
+
+
+/* BUY DISSERTATION UK START */
+
+#BuydissertationUK {
+  background-image: url('./assets/images/faqs/Group1.png');
+  background-position: left right;
+  background-size: auto;
+}
+
+.breadcrumbs {
+  font-size: 14px !important;
+}
+
+
+
+.dissertation_card {
+  border: 0 !important;
+
+}
+
+#buy_dissertation_uk {
+  background-image: url('./assets/images/background3.png');
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+.buy_card_dissertation p {
+  font-size: 12px;
+}
+
+.buy_card_dissertation h1 {
+  font-size: 12px;
+}
+
+.buy_dissertation_uk_h1 {
+  font-size: 45px;
+}
+
+.buy_dissertation_font_size {
+  font-size: 12px;
+}
+
+
+#buy_services {
+  background-image: url('./assets/images/Group12.png');
+  background-position: center;
+  background-size: cover;
+}
+
+/* BUY DISSERTATION UK END */
+
+/* CheapdissertationwritingservicesinUK Start */
+
+#Cheapdissertation {
+  background-image: url('./assets/images/faqs/Group1.png');
+  background-position:  top left;
+  background-size: auto;
+}
+
+#cheap_dissertations {
+  background-image: url('./assets/images/Guarantee/Layer8.png');
+  background-position: center;
+  background-size: cover;
+}
+
+#dissertation {
+  background-image: url('./assets/images/Group12.png');
+  background-position:  center;
+  background-size: cover;
+  height: 100vh;
+}
+
+
+
+.cheap h1 {
+  /* font-size: 35px; */
+}
+
+/* CheapdissertationwritingservicesinUK End */
+
+
+/* Cheaplawdissertationwritingservice Start */
+
+#Cheaplaw {
+  background-image: url('./assets/images/faqs/Group1.png');
+  background-position: top left;
+  background-size: auto;
+}
+
+#section1 {
+  background-image: url('./assets/images/Guarantee/Layer8.png');
+  background-position: center;
+  background-size: cover;
+  height: 100%
+}
+
+
+
+/* Cheaplawdissertationwritingservice End */
+
+
+/* DissertationAbstractWritingServices start */
+
+#DissertationAbstract {
+  background-image: url('./assets/images/faqs/Group1.png');
+  background-position: top left;
+  background-size: auto;
+}
+
+#abstract1 {
+  background-image: url('./assets/images/Guarantee/Layer8.png');
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+/* DissertationAbstractWritingServices end */
+
+
+/* DissertationChapterWritingServices start */
+
+#DissertationChapter {
+  background-image: url('./assets/images/faqs/Group1.png');
+  background-position: top left;
+  background-size: auto;
+}
+
+#chapters {
+  background-image: url('./assets/images/Guarantee/Layer8.png');
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+/* DissertationChapterWritingServices end */
+
+
+#DissertationDiscussion {
+  background-image: url('./assets/images/faqs/Group1.png');
+  background-position: top left;
+  background-size: auto;
+}
+
+
+
+
+/* Dissertationconclusionwritingservice Start */
+
+#Dissertationconclusion {
+  background-image: url('./assets/images/faqs/Group1.png');
+  background-position: top left;
+  background-size: auto;
+}
+
+#conclusions {
+  background-image: url('./assets/images/Guarantee/Layer8.png');
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+/* Dissertationconclusionwritingservice End */
+
+/* DissertationFormattingService start */
+
+#DissertationFormatting {
+  background-image: url('./assets/images/faqs/Group1.png');
+  background-position: top left;
+  background-size: auto;
+}
+
+#Formattings {
+  background-image: url('./assets/images/Guarantee/Layer8.png');
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+/* DissertationFormattingService end */
+
+/* DissertationIntroductionWritingService start */
+
+#DissertationIntroduction {
+  background-image: url('./assets/images/faqs/Group1.png');
+  background-position: top left;
+  background-size: auto;
+}
+
+#Introductions {
+  background-image: url('./assets/images/Guarantee/Layer8.png');
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+/* DissertationIntroductionWritingService end */
+
+/* DissertationMethodologyHelp start */
+
+#DissertationMethodology {
+  background-image: url('./assets/images/faqs/Group1.png');
+  background-position: top left;
+  background-size: auto;
+}
+
+#Methodologys {
+  background-image: url('./assets/images/Guarantee/Layer8.png');
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+/* DissertationMethodologyHelp end */
+
+/* DissertationPresentationWritingServices start */
+
+#DissertationPresentation {
+  background-image: url('./assets/images/faqs/Group1.png');
+  background-position: top left;
+  background-size: auto;
+}
+
+#Presentations {
+  background-image: url('./assets/images/Guarantee/Layer8.png');
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+/* DissertationPresentationWritingServices end */
+
+
+/* OnlineDissertationHelp start */
+
+#OnlineDissertationHelp {
+  background-image: url('./assets/images/faqs/Group1.png');
+  background-position: top left;
+  background-size: auto;
+}
+
+#helps {
+  background-image: url('./assets/images/Guarantee/Layer8.png');
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+/* OnlineDissertationHelp end */
+
+/* PhDQualitativeDataAnalysisservices start */
+
+#PhDQualitativeData {
+  background-image: url('./assets/images/faqs/Group1.png');
+  background-position: top left;
+  background-size: auto;
+}
+
+#Analysises {
+  background-image: url('./assets/images/Guarantee/Layer8.png');
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+/* PhDQualitativeDataAnalysisservices end */
+
+/* LiteratureReviewHelp start */
+
+#LiteratureReviewHelp {
+  background-image: url('./assets/images/faqs/Group1.png');
+  background-position: top left;
+  background-size: auto;
+}
+
+/* LiteratureReviewHelp end */
+
+/* BLOG SECTION START */
+
+.blog_section {
+  margin: -50%;
+}
+
+/* BLOG SECTION START */
+
+/* BLOG DETAILS START */
+
+#blog_details {
+  background-image: url('./assets/images/AboutUs/Background.png');
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+#blog_detail1 {
+  background-image: url('./assets/images/blog/Group2.png');
+ 
+  height: 100%;
+}
+
+.blog_font_size {
+  font-size: 12px;
+}
+
+.cards-titles {
+  font-size: 15px !important;
+  font-weight: bold !important;
+ 
+}
+
+.card-right-border {
+  border-left: 3px solid #5f2184;
+}
+
+.card-grey {
+  background-color: #f1f3f8 !important;
+}
+
+.padding-left {
+  padding: 10% 20%
+}
+
+/* BLOG DETAILS END */
+
+
 
 @keyframes movebtn {
   0% {
@@ -2833,7 +3176,7 @@ td {
     display: none;
   }
 
-  .content h1 {
+  /* .content h1 {
     font-size: 50px;
     text-align: center;
   }
@@ -2841,7 +3184,7 @@ td {
   .content p {
     text-align: center;
 
-  }
+  } */
   
   .content .btn {
     width: 100%;
@@ -2881,7 +3224,7 @@ td {
     display: none;
   }
 
-  .content h1 {
+  /* .content h1 {
     font-size: 50px;
     text-align: center;
   }
@@ -2889,7 +3232,7 @@ td {
   .content p {
     text-align: center;
 
-  }
+  } */
   
   .content .btn {
     width: 100%;
@@ -2957,7 +3300,7 @@ td {
     display: none;
   }
 
-  .content h1 {
+  /* .content h1 {
     font-size: 50px;
     text-align: center;
   }
@@ -2965,7 +3308,7 @@ td {
   .content p {
     text-align: center;
 
-  }
+  } */
   
   .content .btn {
     width: 100%;
@@ -3017,7 +3360,7 @@ td {
     display: none;
   }
 
-  .content h1 {
+  /* .content h1 {
     font-size: 50px;
     text-align: center;
   }
@@ -3025,7 +3368,7 @@ td {
   .content p {
     text-align: center;
 
-  }
+  } */
   
   .content .btn {
     width: 100%;
@@ -3084,7 +3427,7 @@ td {
     display: none;
   }
 
-  .content h1 {
+  /* .content h1 {
     font-size: 50px;
     text-align: center;
   }
@@ -3092,7 +3435,7 @@ td {
   .content p {
     text-align: center;
 
-  }
+  } */
   
   .content .btn {
     width: 100%;
@@ -3146,7 +3489,7 @@ td {
     display: none;
   }
 
-  .content h1 {
+  /* .content h1 {
     font-size: 50px;
     text-align: center;
   }
@@ -3154,7 +3497,7 @@ td {
   .content p {
     text-align: center;
 
-  }
+  } */
   
   .content .btn {
     width: 100%;
@@ -3200,7 +3543,7 @@ td {
     display: none;
   }
 
-  .content h1 {
+  /* .content h1 {
     font-size: 50px;
     text-align: center;
   }
@@ -3208,7 +3551,7 @@ td {
   .content p {
     text-align: center;
 
-  }
+  } */
   
   .content .btn {
     width: 100%;
@@ -3459,13 +3802,13 @@ td {
 
     }
 
-    .writer h1 {
+    /* .writer h1 {
       text-align: center;
-    }
+    } */
 
-    .writer p {
+    /* .writer p {
       text-align: center;
-    }
+    } */
 
     /* .pos-relative {
       position: relative;
@@ -3621,13 +3964,13 @@ td {
 
   }
 
-  .writer h1 {
+  /* .writer h1 {
     text-align: center;
   }
 
   .writer p {
     text-align: center;
-  }
+  } */
 }
 
 @media only screen and (min-width: 393px) {
@@ -3770,13 +4113,13 @@ td {
 
   }
 
-  .writer h1 {
+  /* .writer h1 {
     text-align: center;
   }
 
   .writer p {
     text-align: center;
-  }
+  } */
 }
 
 @media only screen and (min-width: 360px) {
@@ -3919,13 +4262,13 @@ td {
 
   }
 
-  .writer h1 {
+  /* .writer h1 {
     text-align: center;
   }
 
   .writer p {
     text-align: center;
-  }
+  } */
 }
 
 @media only screen and (min-width: 412px) {
@@ -4064,13 +4407,13 @@ td {
 
   }
 
-  .writer h1 {
+  /* .writer h1 {
     text-align: center;
   }
 
   .writer p {
     text-align: center;
-  }
+  } */
 }
 
 /* Table */
@@ -4125,27 +4468,29 @@ td {
   }
 }
 
+
+
 @media only screen and (min-width: 300px) and (max-width: 480px) {
-  .content h1 {
+  /* .content h1 {
     font-size: 30px ;
-  }
+  } */
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  .content h1 {
+  /* .content h1 {
     font-size: 30px;
-  }
+  } */
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  .content h1 {
+  /* .content h1 {
     font-size: 40px;
     text-align: left;
   }
 
   .content p {
     text-align: left;
-  }
+  } */
 
   .cards-1 {
     margin-top: 30% !important;
@@ -4166,16 +4511,39 @@ td {
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
-  .content h1 {
+  /* .content h1 {
     font-size: 30px ;
-  }
+  } */
 }
 
 @media only screen and (min-width: 1201px) {
-  .content h1 {
+  /* .content h1 {
     font-size: 30px ;
-  }
+  } */
 }
+
+
+
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+  
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  
+}
+
+@media only screen and (min-width: 1201px) {
+ 
+}
+
 
 
 
