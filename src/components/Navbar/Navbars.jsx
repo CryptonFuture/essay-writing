@@ -46,11 +46,137 @@ const Navbars = () => {
 
   return (
     <>
+      {/* <nav>
+        <div className='wrapper'>
+          <div className='logo'><a href="#">CodingNepal</a></div>
+          <ul className='nav-links'>
+            <li><a href='#'>Home</a></li>
+            <li><a href='#'>About</a></li>
+            <li>
+              <a href='#'>Dropdown Menu</a>
+              <ul className='drop-menu'>
+                <li><a href='#'>Drop menu 1</a></li>
+                <li><a href='#'>Drop menu 2</a></li>
+                <li><a href='#'>Drop menu 3</a></li>
+                <li><a href='#'>Drop menu 4</a></li>
+
+              </ul>
+            </li>
+            <li>
+              <a href='#'>Mega Menu</a>
+              <div className='mega-box'>
+                <div className='content'>
+                <div className='row'>
+                    <img src="" alt="" />
+                  </div>
+                  <div className='row'>
+                    <header>Design Services</header>
+                    <ul className='mega-links'>
+                      <li><a href='#'>Drop menu 1</a></li>
+                      <li><a href='#'>Drop menu 2</a></li>
+                      <li><a href='#'>Drop menu 3</a></li>
+                      <li><a href='#'>Drop menu 4</a></li>
+                    </ul>
+                  </div>
+
+                  <div className='row'>
+                    <header>Design Services</header>
+                    <ul className='mega-links'>
+                      <li><a href='#'>Drop menu 1</a></li>
+                      <li><a href='#'>Drop menu 2</a></li>
+                      <li><a href='#'>Drop menu 3</a></li>
+                      <li><a href='#'>Drop menu 4</a></li>
+                    </ul>
+                  </div>
+
+                  <div className='row'>
+                    <header>Design Services</header>
+                    <ul className='mega-links'>
+                      <li><a href='#'>Drop menu 1</a></li>
+                      <li><a href='#'>Drop menu 2</a></li>
+                      <li><a href='#'>Drop menu 3</a></li>
+                      <li><a href='#'>Drop menu 4</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a href='#'>Feedback</a></li>
+          </ul>
+        </div>
+      </nav> */}
+
+      {/* <header>
+      <div className='containers-list'>
+        <div className='logo'></div>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li>
+              <a href="#">Services</a>
+              <div className='megamenu'>
+                  <div className='megamenuitems'>
+                    <h3>Web Devlopment</h3>
+                    <ul>
+                      <li>1</li>
+                      <li>2</li>
+                      <li>3</li>
+                      <li>4</li>
+                      <li>5</li>
+                      <li>6</li>
+                    </ul>
+                  </div>
+
+                  <div className='megamenuitems'>
+                    <h3>Web Devlopment</h3>
+                    <ul>
+                      <li>1</li>
+                      <li>2</li>
+                      <li>3</li>
+                      <li>4</li>
+                      <li>5</li>
+                      <li>6</li>
+                    </ul>
+                  </div>
+
+                  <div className='megamenuitems'>
+                    <h3>Web Devlopment</h3>
+                    <ul>
+                      <li>1</li>
+                      <li>2</li>
+                      <li>3</li>
+                      <li>4</li>
+                      <li>5</li>
+                      <li>6</li>
+                    </ul>
+                  </div>
+
+                  <div className='megamenuitems'>
+                    <h3>Web Devlopment</h3>
+                    <ul>
+                      <li>1</li>
+                      <li>2</li>
+                      <li>3</li>
+                      <li>4</li>
+                      <li>5</li>
+                      <li>6</li>
+                    </ul>
+                  </div>
+              </div>
+            </li>
+            <li><a href="#">Training</a></li>
+            <li><a href="#">Internship</a></li>
+            <li><a href="#">Student's Zone</a></li>
+            <li><a href="#">Testimonial</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header> */}
       <nav className='navbar active fixed-top navbar-expand-lg '>
         <div className="container">
           <a className="navbar-brand" href="#">
             <img src={Logo1} className="img-logo" />
-            {/* <span className='ms-2 bolders'>Logo</span> */}
           </a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
@@ -60,29 +186,7 @@ const Navbars = () => {
               <li className="nav-item">
                 <Link className="nav-link" aria-current="page" to="/">Home</Link>
               </li>
-              <li className="nav-item">
-
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dissertation Writing
-                  </a>
-                  <ul class="dropdown-menu">
-                    <div className='container p-3'>
-                      <div className='row'>
-                        <div className='col-12 col-md-6'>
-                          <li><a class="dropdown-item" href="#">Online Dissertation Help</a></li>
-                          <li><a class="dropdown-item" href="#">Dissertation Discussion Writing Services</a></li>
-                          <li><a class="dropdown-item" href="#">Dissertation Presentation Writing Services </a></li>
-                          <li><a class="dropdown-item" href="#">Dissertation Chapter Writing Services </a></li>
-                          <li><a class="dropdown-item" href="#">Dissertation Abstract Writing Services </a></li>
-                          
-                        </div>
-                      </div>
-                    </div>
-
-                  </ul>
-                </li>
-              </li>
+            
               <li className="nav-item">
                 <a className="nav-link" href="#">Editing</a>
               </li>
@@ -92,9 +196,7 @@ const Navbars = () => {
               <li className="nav-item">
                 <a className="nav-link" href="#">Review</a>
               </li>
-              {/* <li className="nav-item">
-            <a className="nav-link" href="#">Samples</a>
-          </li> */}
+            
               <li className="nav-item ms-3">
                 <Button className="btns">
                   <span> Get Started</span>
@@ -112,6 +214,8 @@ const Navbars = () => {
           </div>
         </div>
       </nav>
+
+
     </>
     // <Navbar expand="lg" fixed='top'>
     //   <Container>

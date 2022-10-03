@@ -111,13 +111,13 @@ const CardForm = () => {
 
     return (
         <>
-            <Container>
+            <Container className='mb-5'>
                 <Row>
                     {/* <Col md={4} className="mb-5  mt-3"> */}
                         <Card className='cards-1 card-radius '>
                             <Row>
                                 <Col md={8}>
-                                    <h3 className='fw-bold font-h3 ms-3 mt-2'> A Get <span className='color-blue'>25%</span>  OFF
+                                    <h3 className='fw-bold font-h3 ms-3 mt-2'> Get <span className='color-blue'>25%</span>  OFF
                                         On your 1st Order</h3>
                                 </Col>
 

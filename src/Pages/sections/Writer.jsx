@@ -9,12 +9,12 @@ const Writer = () => {
         <>
             <section id='back-color'>
                 <section id='blur-bg'>
-                    <Container className='py-5' fluid >
-                        <Row >
-                            <Col md={6} className="text-center">
+                    <Container className='py-5' fluid>
+                        <Row>
+                            <Col md={4} className="text-center">
                                 <img src={Testimonial} className="testimonial-img" />
-                                <h5>Clara Mason</h5>
-                                <p className='assignmentexpert'>Assignment Expert</p>
+                                <h5 className='mt-3'>Clara Mason</h5>
+                                <p className='assignmentexpert'>Dissertation Expert</p>
                                 <div className='d-flex flex-row justify-content-center'>
                                     <RatingStar />
                                 </div>
@@ -23,29 +23,11 @@ const Writer = () => {
                                 </Button>
                             </Col>
 
-                            <Col md={6} className="writer mt-3">
-                                {/* <h1>Writer Of
-                                    <span>
-                                        <img src={Line} className="layer-img-4" />
-                                    </span>
-                                  <span className='positions-3'>The Week</span>  
-                                </h1> */}
-
+                            <Col md={7} className="writer mt-3">
                                 <h1>
-                                    Writer Of The Week 
+                                    Writer Of The Month
                                 </h1>
-                                <p>Making it to the top assignment writers UK based, Clara has clearly won the title of “writer of the week”. With over 3100 assignment orders fulfilled and +2451 graded with highest ranks. Providing best service which is desired by many students has been the pro-star of Clara in becoming the most favourite. Though other reasons include:
-
-                                    Her Master’s qualification
-                                    Over 6 years of experience at the best website for assignment writing
-                                    Humble communication style
-                                    Quick submissions of assignment orders
-                                    +2540 appreciation emails from clients scored top-grades
-                                    Working with the best assignment writing website UK is offering has been a charm for Clara to prove herself. This is what she had to say about her success:
-
-                                    “From finding assignment writers near me back in my days to be able to work at best assignment writing website has been a game-changer. I’m glad to help out as many students as I can by delivering an assignment suitable to their specifications and guarantees a top-grade they all deserve.”
-
-                                    She’s proudly a part of our assignment writing services in UK and deserves the title due to her intelligence and hard work.</p>
+                                <p className='writer_month'>One of the most proficient writers we have, Clara has won the title of the writer of the month making it to the top assignment writers UK-based. She fulfilled over 3000 assignment orders and +2460 graded with the highest ranks and proved herself the best in an academic and professional career. As desired by many students has been the pro-star of Clara in becoming the favorite by providing the best services. Being the best in both careers, she’s having Masters qualification and over 6 years of experience at the best website for assignment writing. Clients are satisfied with her humble communication style while maintaining quick submissions of assignment orders and in return got +2540 appreciation emails from clients who scored top grades. She proved herself the best among several writers and working with the best UK assignment writing service has been a charm for Clara to polish herself more. Clara believed in hard work and while talking about the hard struggles she said, To work with the best assignment writing website has been a game-changer for me as previously I worked with several individual clients but now I’m glad to help out as many students as I can by assuring to help them out and delivering a top-notch quality assignment suitable to their requirements and guarantees a top-grade they all deserve. We are proud of her for being a part of our assignment writing services in the UK and deserves the title due to her intelligence and hard work.</p>
                             </Col>
                         </Row>
                     </Container>

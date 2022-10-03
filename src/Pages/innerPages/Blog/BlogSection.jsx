@@ -50,7 +50,7 @@ const BlogSection = () => {
                         </Card>
                     </Col>
 
-                    <Col md={4} >
+                    <Col md={4}>
                         <h6 className='fw-bold'>Search</h6>
                         <hr />
                         <InputGroup className='mb-3'>
@@ -107,43 +107,7 @@ const BlogSection = () => {
                         <div className='mt-5'>
                             <h6 className='fw-bold'>Latest Post</h6>
                             <hr />
-                            {/* <ListGroup as="ol">
-                                <ListGroup.Item
-                                    as="li"
-                                    className="list_group d-flex justify-content-between align-items-start"
-                                >
-                                    <div className="">
-
-                                        <div className="fw-bold font_blog"><img src={layer4} className="blog_img" /> The Importance of intrinsic
-                                            Motivation for Students</div>
-                                    </div>
-
-                                   
-
-                                </ListGroup.Item>
-                                <ListGroup.Item
-                                    as="li"
-                                    className="list_group d-flex justify-content-between align-items-start"
-                                >
-                                    <div className="">
-                                        <div className="fw-bold font_blog">HR and L&D</div>
-                                    </div>
-
-                                    <span className='fw-bold font_blog'>(5)</span>
-
-                                </ListGroup.Item>
-                                <ListGroup.Item
-                                    as="li"
-                                    className="list_group d-flex justify-content-between align-items-start"
-                                >
-                                    <div className="">
-                                        <div className="fw-bold font_blog">Video & Tips</div>
-                                    </div>
-
-                                    <span className='fw-bold font_blog'>(5)</span>
-
-                                </ListGroup.Item>
-                            </ListGroup> */}
+                            
 
                             <div className='d-flex flex-row'>
                                 <img src={layer4} className="blog_img" />
@@ -190,7 +154,7 @@ const BlogSection = () => {
                     </Col>
                 </Row>
 
-                <Row className='mt-3 positions'>
+                <Row style={{marginTop: '-420px'}}>
                     <Col md={4}>
                         <Card className='border-0 shadow'>
                             <Card.Img variant="top" src={layer2} />
@@ -226,9 +190,8 @@ const BlogSection = () => {
                             </Card.Body>
                         </Card>
                     </Col>
-
-
                 </Row>
+               
 
                 <Row className='mt-3'>
                     <Col md={4}>
@@ -266,7 +229,9 @@ const BlogSection = () => {
                             </Card.Body>
                         </Card>
                     </Col>
-                </Row>
+
+            
+                </Row> 
             </Container>
         </>
     )

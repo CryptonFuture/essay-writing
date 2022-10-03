@@ -4,7 +4,7 @@ import { Breadcrumb } from 'react-bootstrap'
 const Breadcrumbs = () => {
     return (
         <>
-            <Breadcrumb className='breadcrumb'>
+            <Breadcrumb className='breadcrumb breadcrumbs'>
                 <Breadcrumb.Item>Home</Breadcrumb.Item>
                 <Breadcrumb.Item>
                     Terms of Use
