@@ -31,6 +31,16 @@ import PhDQualitativeDataAnalysisservices from '../Pages/innerPages/Dissertation
 import BlogDetails from '../Pages/innerPages/BlogDetails/BlogDetails'
 import Dissertationconclusionwritingservice from '../Pages/innerPages/DissertationWriting/Dissertationconclusionwritingservice'
 import LiteratureReviewHelp from '../Pages/innerPages/DissertationWriting/LiteratureReviewHelp'
+import DissertationEditingandProofreadingServices from '../Pages/innerPages/DissertationWriting/DissertationEditingandProofreadingServices'
+import MastersDissertationProposalHelp from '../Pages/innerPages/DissertationWriting/MastersDissertationProposalHelp'
+import MBADissertationProposalHelp from '../Pages/innerPages/DissertationWriting/MBADissertationProposalHelp'
+import PhDdissertationeditingservices from '../Pages/innerPages/DissertationWriting/PhDdissertationeditingservices'
+import PhDDissertationProposalHelp from '../Pages/innerPages/DissertationWriting/PhDDissertationProposalHelp'
+import DissertationProposal from '../Pages/innerPages/DissertationWriting/DissertationProposal'
+import WriteMyDissertationUK from '../Pages/innerPages/DissertationWriting/WriteMyDissertationUK'
+import ResearchDataCollectionServices from '../Pages/innerPages/DissertationWriting/ResearchDataCollectionServices'
+import QualitativeDataDissertationServices from '../Pages/innerPages/DissertationWriting/QualitativeDataDissertationServices'
+import DissertationPosterDesigningServices from '../Pages/innerPages/DissertationWriting/DissertationPosterDesigningServices'
 
 
 const Routers = () => { 
@@ -38,7 +48,7 @@ const Routers = () => {
                <>
                <Router>
                 <Routes>
-                <Route path='/' element={<LiteratureReviewHelp />}/>
+                <Route path='/' element={<DissertationPosterDesigningServices />}/>
                 {/* <Route path= '/' element={<DissertationFormattingService />}/> */}
                 {/* <Route path='/' element={<Dissertationconclusionwritingservice />}/> */}
                     {/* <Route path='/' element={<CheapdissertationwritingservicesinUK />}/> */}
@@ -71,6 +81,7 @@ const Routers = () => {
                     <Route path='/terms-us' element={<TermUs />} />
                     <Route path='/order' element={<Order />} />
                     <Route path='/blog' element={<Blog />} />
+                    <Route path='/blogDetails/:id' element={<BlogDetails />} />
                 </Routes>
             </Router>
         </>

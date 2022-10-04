@@ -1842,6 +1842,37 @@ td {
  margin-top: 13% !important;
 }
 
+#WriteMyDissertationUK {
+  background-image: url('./assets/images/faqs/Group1.png');
+  background-position: top left;
+  background-size: auto;
+}
+
+#ResearchDataCollectionServices {
+  background-image: url('./assets/images/faqs/Group1.png');
+  background-position: top left;
+  background-size: auto;
+}
+
+#QualitativeData {
+  background-image: url('./assets/images/faqs/Group1.png');
+  background-position: top left;
+  background-size: auto;
+}
+
+#ResearchDataCollectionServices {
+  background-image: url('./assets/images/faqs/Group1.png');
+  background-position: top left;
+  background-size: auto;
+}
+
+#DissertationPoster {
+  background-image: url('./assets/images/faqs/Group1.png');
+  background-position: top left;
+  background-size: auto;
+}
+
+
 /* BLOG */
 
 #blog {
@@ -1849,6 +1880,11 @@ td {
   background-position: center;
   background-size: cover;
   height: 100% !important;
+}
+
+.cursors {
+  cursor: pointer;
+  color: #5f2184;
 }
 
 .blog_font_size {
@@ -2204,6 +2240,51 @@ td {
 }
 
 /* LiteratureReviewHelp end */
+
+
+/* DissertationEditingandProofreadingServices start */
+
+#DissertationEditing {
+  background-image: url('./assets/images/faqs/Group1.png');
+  background-position: top left;
+  background-size: auto;
+  
+}
+
+/* DissertationEditingandProofreadingServices end  */
+
+
+/* MastersDissertationProposalHelp start */
+
+#MastersDissertation {
+  background-image: url('./assets/images/faqs/Group1.png');
+  background-position: top left;
+  background-size: auto;
+}
+
+/* MastersDissertationProposalHelp end */
+
+/* MBADissertationProposalHelp start */
+
+#MBADissertation {
+  background-image: url('./assets/images/faqs/Group1.png');
+  background-position: top left;
+  background-size: auto;
+}
+
+/* MBADissertationProposalHelp end */
+
+#PhDdissertation {
+  background-image: url('./assets/images/faqs/Group1.png');
+  background-position: top left;
+  background-size: auto;
+}
+
+#PhDDissertation {
+  background-image: url('./assets/images/faqs/Group1.png');
+  background-position: top left;
+  background-size: auto;
+}
 
 /* BLOG SECTION START */
 

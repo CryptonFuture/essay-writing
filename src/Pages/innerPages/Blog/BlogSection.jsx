@@ -1,5 +1,6 @@
-import React, { useRef } from 'react'
-import { Container, Row, Col, Card, Button, Form, InputGroup, ListGroup, Badge } from 'react-bootstrap'
+import axios from 'axios'
+import React, { useState, useRef, useEffect } from 'react'
+import { Container, Row, Col, Card, Button, Form, InputGroup, ListGroup, Badge, Spinner } from 'react-bootstrap'
 import layer from '../../../assets/images/blog/Layer.png'
 import layer1 from '../../../assets/images/blog/Layer1.png'
 import layer2 from '../../../assets/images/blog/Layer2.png'
@@ -7,32 +8,121 @@ import layer3 from '../../../assets/images/blog/Layer3.png'
 import layer4 from '../../../assets/images/blog/Layer4.png'
 import layer5 from '../../../assets/images/blog/Layer5.png'
 import layer6 from '../../../assets/images/blog/Layer6.png'
+import { Link } from 'react-router-dom'
+import { slice } from 'lodash'
+import Swal from 'sweetalert2'
+
+const ReadMore = ({ children }) => {
+    const text = children
+    const [isReadMore, setIsReadMore] = useState(true)
+
+    const toggleReadMore = () => {
+        setIsReadMore(!isReadMore)
+    }
+
+    return (
+        <p>
+            {isReadMore ? text.slice(0, 150) : text}
+            <span onClick={toggleReadMore}>
+                {isReadMore ? <p className='fw-bold cursors'>...read more</p> : <p className='text-danger cursors'>show less</p>}
+            </span>
+        </p>
+    )
+}
+
+function simulateNetworkRequest() {
+    return new Promise((resolve) => setTimeout(resolve, 2000))
+}
 
 const BlogSection = () => {
+    const [data, setData] = useState([])
+    const [limit, setLimit] = useState('')
+    const [isLoading, setIsLoading] = useState(false)
+
+
+
+    const FetchBlog = async () => {
+        await axios.get(`https://admin.dissertationproposal.uk/api/blogs`).then(res => {
+            console.log(res.data.message)
+            console.log(res.data)
+            setData(res.data.data)
+        }).catch(error => {
+            console.log(error)
+        })
+    }
+
+
+    const FetchLoadMore = async () => {
+        setIsLoading(true)
+        await axios.get(`https://admin.dissertationproposal.uk/api/load-more/blogs/${limit}`).then(res => {
+            console.log(res.data.message)
+            console.log(res.data)
+            setData(res.data.data)
+        }).catch(error => {
+            console.log(error)
+        })
+    }
+
+    const loadMore = () => {
+        setLimit(limit + 20)
+    }
+
+    useEffect(() => {
+        FetchLoadMore()
+        FetchBlog()
+    }, [limit])
+
+    useEffect(() => {
+        if (isLoading) {
+            simulateNetworkRequest().then(() => {
+                setIsLoading(false)
+            }).catch((error) => {
+                console.log(error)
+            })
+        }
+    }, [isLoading])
+
+   
 
     return (
         <>
-            <Container className='py-5 p-5 mt-5'>
+            <Container className='py-5 p-5 mt-5' fluid>
                 <Row>
-                    <Col md={4}>
-                        <Card className='border-0 shadow'>
-                            <Card.Img variant="top" src={layer} />
-                            <Card.Body className="p-3">
-                                <div className='d-flex flex-row'>
-                                    <small style={{ color: 'gray' }}><i class="fa-regular fa-calendar"></i> August 10, 2022</small>
-                                    <small className='ms-5' style={{ color: 'gray' }}><i class="fa-regular fa-eye"></i> 811 views</small>
-                                </div>
-                                <Card.Title className='fw-bold mt-3'>The Importance of intrinsic
-                                    Motivation for Students</Card.Title>
-                                <Card.Text className='blog_font_size'>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                </Card.Text>
-                                <Button variant="primary" className='blog_button'>Read More</Button>
-                            </Card.Body>
-                        </Card>
-                    </Col>
 
-                    <Col md={4}>
+                    {
+                      data.map((blogs, index) => {
+                            return  (
+                                <Col md={4} className="mt-3">
+                                    <Card className='border-0 shadow' key={index}>
+                                        <Card.Img variant="top" src={blogs.img} />
+                                        <Card.Body className="p-3">
+                                            <div className='d-flex flex-row'>
+                                                <small style={{ color: 'gray' }}><i class="fa-regular fa-calendar"></i> August 10, 2022</small>
+                                                <small className='ms-5' style={{ color: 'gray' }}><i class="fa-regular fa-eye"></i> 811 views</small>
+                                            </div>
+                                            <Card.Title className='fw-bold mt-3'>{blogs.title}</Card.Title>
+                                            <Card.Text className='blog_font_size'>
+                                                <ReadMore>
+                                                    {blogs.short_des}
+                                                </ReadMore>
+                                            </Card.Text>
+                                            <Card.Text className='blog_font_size'>
+                                                <ReadMore>
+                                                    {blogs.long_des}
+                                                </ReadMore>
+                                            </Card.Text>
+                                            <Link to={`/blogDetails/${blogs.id}`}>
+                                                <Button variant="primary" className='blog_button'><i class="fa-regular fa-eye"></i> View </Button>
+                                            </Link>
+                                        </Card.Body>
+                                    </Card>
+                                </Col>
+                            )
+                        })}
+
+                       
+
+                    {/* <Col md={4}>
                         <Card className='border-0 shadow'>
                             <Card.Img variant="top" src={layer1} />
                             <Card.Body className="p-3">
@@ -48,9 +138,9 @@ const BlogSection = () => {
                                 <Button variant="primary" className='blog_button'>Read More</Button>
                             </Card.Body>
                         </Card>
-                    </Col>
+                    </Col> */}
 
-                    <Col md={4}>
+                    {/* <Col md={4}>
                         <h6 className='fw-bold'>Search</h6>
                         <hr />
                         <InputGroup className='mb-3'>
@@ -107,7 +197,7 @@ const BlogSection = () => {
                         <div className='mt-5'>
                             <h6 className='fw-bold'>Latest Post</h6>
                             <hr />
-                            
+
 
                             <div className='d-flex flex-row'>
                                 <img src={layer4} className="blog_img" />
@@ -139,22 +229,22 @@ const BlogSection = () => {
                         <div className='mt-5'>
                             <h6 className='fw-bold'>Popular Tags</h6>
                             <hr />
-                            <span className='font_blog_span p-2'>education</span> 
+                            <span className='font_blog_span p-2'>education</span>
                             <span className='font_blog_span ms-2 p-2'>Language</span>
                             <span className='font_blog_span ms-2 p-2'>Learning</span>
 
 
                         </div>
                         <div className='mt-3'>
-                        <span className='font_blog_span p-2'>data science</span> 
+                            <span className='font_blog_span p-2'>data science</span>
                             <span className='font_blog_span ms-2 p-2'>tips</span>
                             <span className='font_blog_span ms-2 p-2'>videos</span>
                         </div>
 
-                    </Col>
+                    </Col> */}
                 </Row>
 
-                <Row style={{marginTop: '-420px'}}>
+                {/* <Row style={{marginTop: '-420px'}}>
                     <Col md={4}>
                         <Card className='border-0 shadow'>
                             <Card.Img variant="top" src={layer2} />
@@ -231,7 +321,19 @@ const BlogSection = () => {
                     </Col>
 
             
-                </Row> 
+                </Row>  */}
+                <Row className='justify-content-center mt-5'>
+                    <Col md={6}>
+                        <div className='d-flex flex-row justify-content-center'>
+                            <Button variant="primary" className='blog_button' onClick={!isLoading ? loadMore : null}>
+                                {isLoading ? <Spinner animation="border" role="status" size="sm">
+                                    <span className="visually-hidden">Loading...</span>
+                                </Spinner> : 'Load More '}
+
+                            </Button>
+                        </div>
+                    </Col>
+                </Row>
             </Container>
         </>
     )
