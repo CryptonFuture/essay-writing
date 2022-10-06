@@ -16,7 +16,7 @@ const Pricing = () => {
                 <Container>
                     <Row>
                         {/* <img src={Layer} className="layers-4" /> */}
-                        <Col md={12} className="marg-tp header">
+                        <Col md={12} className="marg-tp header mb-5">
                             <h1 className='text-center text-h1'>Price That  Won't Hurt <br /> Your Wallet</h1>
                         </Col>
                     </Row>

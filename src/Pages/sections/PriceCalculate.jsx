@@ -19,9 +19,9 @@ const PriceCalculate = () => {
                             {/* <span className='span-img'>
                                     <img src={Line} className="layer-img-3" />
                                 </span> */}
-                           
+
                         </h5>
-                        <Col md={6} className="price_calculate  mb-5">
+                        <Col md={7} className="price_calculate  mb-5">
 
                             <div className='d-flex flex-row flexiable'>
                                 <img src={Layer1} className="mt-3 img-height" />
@@ -30,7 +30,7 @@ const PriceCalculate = () => {
                                 </h5>
                             </div>
                             <p className='font-size'>Offering you the top-notch quality dissertation, while maintaining the
-best prices and meeting deadlines</p>
+                                best prices and meeting deadlines</p>
 
                             <div className='d-flex flex-row flexiable'>
                                 <img src={Layer2} className="mt-3 img-height" />
@@ -39,7 +39,7 @@ best prices and meeting deadlines</p>
                                 </h5>
                             </div>
                             <p className='font-size'>Assuring on-time delivery, we deliver as per our claim! Order now and
-get the best service in town that you will never regret</p>
+                                get the best service in town that you will never regret</p>
 
                             <div className='d-flex flex-row flexiable'>
                                 <img src={Layer3} className="mt-3 img-height price_calculate_icon_image" />
@@ -48,10 +48,10 @@ get the best service in town that you will never regret</p>
                                 </h5>
                             </div>
                             <p className='font-size'>Enabling our client&#39;s full privacy for the order placed, we never
-compromise on such things</p>
+                                compromise on such things</p>
                         </Col>
 
-                        <Col md={6} className="row-md">
+                        <Col md={5} className="row-md">
                             <ListGroupCard />
                         </Col>
                     </Row>

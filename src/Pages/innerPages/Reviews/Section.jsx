@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Container, Row, Col, Card, Button } from 'react-bootstrap'
+import { Container, Row, Col, Card, Button, Spinner } from 'react-bootstrap'
 import Avatar from '../../../assets/images/OurEssayWriter/Avatar.png'
 import Avatar1 from '../../../assets/images/OurEssayWriter/Avatar1.png'
 import Avatar2 from '../../../assets/images/OurEssayWriter/Avatar2.png'
@@ -13,29 +13,48 @@ import arrowImage from '../../../assets/images/reviews/rightarrow.png'
 import Layer from '../../../assets/images/AboutUs/Layer.png'
 import { Items } from '../../../Item/Item'
 import { slice } from 'lodash'
+import { useEffect } from 'react'
+
+const networkRequest = () => {
+    return new Promise((resolve) => setTimeout(resolve, 2000))
+}
 
 const Section = () => {
     const [item, setItem] = useState(Items)
     const [isCompleted, setIsCompleted] = useState(false)
+    const [isLoading, setIsLoading] = useState(false)
     const [index, setIndex] = useState(10)
     const initialPost = slice(item, 0, index)
+
 
     const loadMore = () => {
         setIndex(index + 10)
         console.log(index)
         if(index >= item.length) {
+            setIsLoading(true)
             setIsCompleted(true)
         } else {
+            setIsLoading(false)
             setIsCompleted(false)
         }
     }
+
+    useEffect(() => {
+        if(isLoading) {
+            networkRequest().then(() => {
+                setIsLoading(false)
+            }).catch(error => {
+                console.log(error)
+            })
+        }
+    }, [isLoading])
 
     return (
         <>
             <section id="review-bg">
                 <Container className='py-5'>
                     <Row>
-                        <h1 className='text-center fw-bold'>Our Happy <img src={Layer} className="layers-7" /> Client</h1>
+                        <h1 className='text-center fw-bold'>Our Happy  Client</h1>
                         
                             {
                                 initialPost.map((items, index) => {
@@ -307,7 +326,11 @@ const Section = () => {
                                     isCompleted ? (
                                         <h1 className='ms-3'>That's It</h1>
                                     ) : (
-                                        <Button onClick={loadMore} className='load-more ms-5 bg-btn'>Load More</Button>
+                                        <Button disabled={isLoading} onClick={!isLoading ? loadMore : null} className='load-more ms-5 bg-btn'>
+                                            {isLoading ? <Spinner animation="border" role="status" size="sm">
+                                                            <span className="visually-hidden">Loading...</span>
+                                                        </Spinner> : 'Load More'}
+                                        </Button>
 
                                     )
                                 }

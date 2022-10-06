@@ -9,8 +9,8 @@ const Section1 = () => {
     return (
         <>
             <Container className='py-5 container-1'>
-                <Row className='rows'>
-                    <Col md={6} className="h1 para cols-1">
+                <Row className='rows align-items-center'>
+                    <Col md={7} className=" para cols-1">
                         <h1 className='font-h1'>Who Are We?</h1>
                         <p className='paragraph'>
                             Searching for a leading dissertation proposal assignment writing service in the UK? Then
@@ -47,7 +47,7 @@ const Section1 = () => {
 
 
                     </Col>
-                    <Col md={6}>
+                    <Col md={5}>
                         <img src={Group4} className="img-animation img-fluid" />
                     </Col>
                 </Row>

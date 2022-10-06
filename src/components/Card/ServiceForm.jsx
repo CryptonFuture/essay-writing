@@ -110,7 +110,7 @@ const ServiceForm = () => {
     return (
         <Container>
             <Row>
-                <Card className='cards-1 card-radius '>
+                <Card className='cards-2 card-radius '>
                     <Row>
                         <Col md={8}>
                             <h3 className='fw-bold font-h3 ms-3 mt-2'> A Get <span className='color-blue'>25%</span>  OFF
@@ -125,7 +125,7 @@ const ServiceForm = () => {
                     <Form onSubmit={handleSubmit(!isLoading ? submit : null)} method="POST">
                         <Container>
                             <Row>
-                                <Col md={6} xs={12} sm={12}>
+                                <Col md={6}>
                                     <Form.Group controlId="formGridEmail">
                                         <Form.Label className='font-input'>Username</Form.Label>
                                         <Form.Control {...register('username', { required: true, maxLength: 30 })} className='input' name="username" type="text" placeholder='Full Name' />

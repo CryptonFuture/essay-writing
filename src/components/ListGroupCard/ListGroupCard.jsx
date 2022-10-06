@@ -10,7 +10,7 @@ const ListGroupCard = () => {
                     <Card.Title>
                         <h3 className='fw-bold text-center'>Our Freebies</h3>
                     </Card.Title>
-                    <Card.Text className='p-2'>
+                    <Card.Text >
                         <ListGroup variant="flush" >
                             <ListGroup.Item className='lists-groups'>
                                 <img src={check} alt="" className='img-size' />

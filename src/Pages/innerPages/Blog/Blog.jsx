@@ -2,12 +2,14 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import Navbars from '../../../components/Navbar/Navbars'
 import BlogSection from './BlogSection'
+import Navbar from '../../../components/Navbar/Navbar'
 
 const Blog = () => {
   return (
     <>
-      <Navbars />
+      <Navbar />
       <section id="blog">
+        
             <Container className='py-5 p-5 mt-5'>
                 <Row className='justify-content-center'>
                     <Col md={6} className=" order_margin">

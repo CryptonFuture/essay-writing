@@ -2,6 +2,7 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import Breadcrumbs from '../../../components/Breadcrumb/Breadcrumb'
 import CalculatePrice from '../../../components/Card/CalculatePrice'
+import ServiceForm from '../../../components/Card/ServiceForm'
 
 const Section = () => {
   return (
@@ -9,7 +10,7 @@ const Section = () => {
          <section id='revision'>
                 <Container className='py-5 py-mg'>
                     <Row>
-                        <Col md={6} className='col-ms'>
+                        <Col md={7} className='col-ms'>
                             <Breadcrumbs />
                             <h1 className='fw-bold'>Revision policy</h1>
                             <p>In certain cases, customer might feel the need to alter to change certain things with a delivered paper. At EssayUSA.com we understand this quite well. Hence we provide the best possible academic assistance in revising a paper and this is done at no cost based on the simple conditions below:</p>
@@ -28,8 +29,8 @@ const Section = () => {
                             <p>  This service serves a simple purpose: it aims to seamlessly enable you to get your new requirements to be implemented without paying for a whole new paper and allows to compensate the writer for the work done as they completed the original paper under the initial instructions and are requested to include new ones. </p>
                         </Col>
 
-                        <Col md={6}>
-                            <CalculatePrice />
+                        <Col md={5} className="col-wd-5">
+                            <ServiceForm />
                         </Col>
                     </Row>
                 </Container>

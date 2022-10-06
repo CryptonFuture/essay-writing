@@ -11,8 +11,8 @@ const Cookie = () => {
             <Navbars />
             <Section />
             <Foot />
-            <Footers />
             <Footer />
+            <Footers />
         </>
     )
 }

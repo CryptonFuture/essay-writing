@@ -2,6 +2,7 @@ import React from 'react'
 import { Container, Row, Col, Breadcrumb } from 'react-bootstrap'
 import CalculatePrice from '../../../components/Card/CalculatePrice'
 import Breadcrumbs from '../../../components/Breadcrumb/Breadcrumb'
+import ServiceForm from '../../../components/Card/ServiceForm'
 
 const Section = () => {
     return (
@@ -9,9 +10,9 @@ const Section = () => {
             <section id='cookie'>
                 <Container className='py-5 py-mg'>
                     <Row>
-                        <Col md={6} className='col-ms'>
+                        <Col md={7} className='col-ms'>
                             <Breadcrumbs />
-                            <h1 className='fw-bold mt-5'>Cookie Policy</h1>
+                            <h1 className='fw-bold '>Cookie Policy</h1>
                             <p>This document is created to provide all the relevant information to our customers/visitors who
                                 are interested to learn about our use of web beacons, cookies, methodologies, and tracking
                                 tools. The usage of these technologies may be applied to our website, apps, and other linked
@@ -140,9 +141,9 @@ const Section = () => {
 
                         </Col>
 
-                        {/* <Col md={6}>
-                            <CalculatePrice />
-                        </Col> */}
+                        <Col md={5} className="col-wd-5">
+                            <ServiceForm />
+                        </Col>
                     </Row>
                 </Container>
             </section>

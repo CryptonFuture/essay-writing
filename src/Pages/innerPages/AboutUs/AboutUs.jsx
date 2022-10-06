@@ -17,8 +17,8 @@ const AboutsUs = () => {
       <section id='about-bg'>
         <Container className="py-5 about-container">
           <Row className='justify-content-center'>
-            <Col md={6} className="marg-tp heading cols">
-              <h1 className='text-center text-h1 about-us'>About Us </h1>
+            <Col md={6} className="marg-tp mb-5">
+              <h1 className='text-center text-h1'>About Us </h1>
             </Col>
           </Row>
         </Container>

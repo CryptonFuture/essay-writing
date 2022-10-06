@@ -29,8 +29,7 @@ const Subject = () => {
                                     </span>
                                     <span className='positions-5'>Writers</span>
                                 </h1>
-                                <p className='text-center texted'>From Marketing to Law, We have professional and qualified writers in
-                                    every domain, you will get assistance in the below subject fields </p>
+                                <p className='text-center texted'>We understand and cater to the needs of every domain! Our proficient writers are specialized in every field from Nursing to Finance. In any subject or field, you'll get tailor-made writings </p>
                             </Col>
                         </Row>
 

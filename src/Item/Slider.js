@@ -1,37 +1,37 @@
 export const Slider = [
     {
-        name: 'Hannah',
-        review: '4.8',
-        date: 'May 7, 2022',
-        description: 'I contacted Dissertation Proposal for the entire dissertation. They even provided me with the topic options. Not only my topic was approved, but I also got the maximum score on my dissertation.',
+        name: 'Harry ',
+        review: '4.5',
+        date: 'Feb, 23 2022',
+        description: 'I contacted Dissertation Proposal for the entire dissertation. They even provided me with the topic options.',
     },
 
     {
-        name: 'Hannah',
-        review: '4.8',
-        date: 'May 7, 2022',
+        name: 'Marton ',
+        review: '4.2',
+        date: 'Jan,7 2022',
         description: 'Excellent service as they promptly responded and completed the dissertation way before the deadline date.'
     },
 
     {
-        name: 'Hannah',
-        review: '4.8',
-        date: 'May 7, 2022',
+        name: 'Guptill',
+        review: '4.3',
+        date: 'April 5, 2021',
         description: 'I am very much satisfied with their services and would highly recommend them to others for better dissertation writing.'
 
     },
 
     {
-        name: 'Hannah',
-        review: '4.8',
-        date: 'May 7, 2022',
-        description: 'My friend referred to Dissertation Proposal for dissertation writing. They provided services above my expectations. Thanks to the Dissertation Proposal.'
+        name: 'Sushma ',
+        review: '4.2',
+        date: 'March,26 2021',
+        description: 'My friend referred to Dissertation Proposal for dissertation writing. They provided services above my expectations.'
 
     },
 
     {
-        name: 'Hannah',
-        review: '4.8',
+        name: 'Maria',
+        review: '4.4',
         date: 'May 7, 2022',
         description: 'Good service. Excellent communication from the support team and the writing expert. Highly satisfied with their work.'
     }
@@ -39,39 +39,39 @@ export const Slider = [
 
 export const Slider1 = [
     {
-        name: 'Hannah',
-        review: '4.8',
-        date: 'May 7, 2022',
-        description: 'Dissertation Proposal, what a fitting name for a website that saved me from hours of being confined to my desk. I am so excited to finally find a platform that helps me write my dissertation and thesis with the absolute best quality and all within the confines of a couple of clicks',
+        name: 'Mark',
+        review: '4.7',
+        date: 'Dec 13, 2022',
+        description: 'Dissertation Proposal, what a fitting name for a website that saved me from hours of being confined to my desk. ',
     },
 
     {
-        name: 'Hannah',
+        name: 'Waugh ',
         review: '4.8',
-        date: 'May 7, 2022',
+        date: 'May 20, 2022',
         description: 'Brilliant work, right on time and without any plagiarism. Will recommend it to others for thesis writing.'
     },
 
     {
-        name: 'Hannah',
-        review: '4.8',
-        date: 'May 7, 2022',
+        name: 'Southee',
+        review: '4.6',
+        date: 'june 13, 2022',
         description: 'Absolutely on the target. Provided the service with professionalism and honesty. Extremely experienced and incredibly flexible.'
 
     },
 
     {
-        name: 'Hannah',
-        review: '4.8',
-        date: 'May 7, 2022',
+        name: 'Brandon',
+        review: '4.5',
+        date: 'july 20, 2022',
         description: 'Great effort from the Dissertation Proposal. They have some standard and quality writing. Quite impressed with their work.'
 
     },
 
     {
-        name: 'Hannah',
-        review: '4.8',
-        date: 'May 7, 2022',
+        name: 'Souphia',
+        review: '4.3',
+        date: 'sep 1, 2022',
         description: 'I loved their work. They professionally manage my thesis and delivered it on time with 100% originality.'
     }
 ]

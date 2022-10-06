@@ -2,6 +2,7 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import Breadcrumbs from '../../../components/Breadcrumb/Breadcrumb'
 import CalculatePrice from '../../../components/Card/CalculatePrice'
+import ServiceForm from '../../../components/Card/ServiceForm'
 
 const Section = () => {
     return (
@@ -9,7 +10,7 @@ const Section = () => {
             <section id="term-us">
                 <Container className='py-5 py-mg containers'>
                     <Row>
-                        <Col md={6} className='col-ms terms'>
+                        <Col md={7} className='col-ms terms'>
                             <Breadcrumbs />
                             <h1>Terms Of Use</h1>
 
@@ -145,8 +146,8 @@ const Section = () => {
                             <p>The laws of Gibraltar, excluding its conflicts of law rules, govern this Agreement and your use of the Website. Your use of the Website may also be subject to other local, state, national, or international laws. To the extent that any action relating to any dispute hereunder is permitted to be brought in a court of law, such action will be subject to the exclusive jurisdiction of the courts located in Gibraltar, and you hereby irrevocably submit to personal jurisdiction in such courts and waive any defence of inconvenient forum.</p>
                         </Col>
 
-                        <Col md={6}>
-                            <CalculatePrice />
+                        <Col md={5} className="col-wd-5">
+                            <ServiceForm />
                         </Col>
                     </Row>
                 </Container>

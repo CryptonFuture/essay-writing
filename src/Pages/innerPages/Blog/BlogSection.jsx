@@ -11,6 +11,8 @@ import layer6 from '../../../assets/images/blog/Layer6.png'
 import { Link } from 'react-router-dom'
 import { slice } from 'lodash'
 import Swal from 'sweetalert2'
+import parse from 'html-react-parser';
+
 
 const ReadMore = ({ children }) => {
     const text = children
@@ -86,7 +88,7 @@ const BlogSection = () => {
 
     return (
         <>
-            <Container className='py-5 p-5 mt-5' fluid>
+            <Container className='py-5 p-5 mt-5'>
                 <Row>
 
                     {
@@ -102,6 +104,7 @@ const BlogSection = () => {
                                             </div>
                                             <Card.Title className='fw-bold mt-3'>{blogs.title}</Card.Title>
                                             <Card.Text className='blog_font_size'>
+                                                
                                                 <ReadMore>
                                                     {blogs.short_des}
                                                 </ReadMore>
@@ -324,14 +327,14 @@ const BlogSection = () => {
                 </Row>  */}
                 <Row className='justify-content-center mt-5'>
                     <Col md={6}>
-                        <div className='d-flex flex-row justify-content-center'>
+                        {/* <div className='d-flex flex-row justify-content-center'>
                             <Button variant="primary" className='blog_button' onClick={!isLoading ? loadMore : null}>
                                 {isLoading ? <Spinner animation="border" role="status" size="sm">
                                     <span className="visually-hidden">Loading...</span>
                                 </Spinner> : 'Load More '}
 
                             </Button>
-                        </div>
+                        </div> */}
                     </Col>
                 </Row>
             </Container>

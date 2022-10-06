@@ -5,7 +5,7 @@ import Line from '../../../assets/images/Line.png'
 
 const Section2 = () => {
   return (
-    <section id='popular-hero' style={{marginTop: '-50%'}}>
+    <section id='popular-hero' >
                 <section id="popular-bg">
                     <Container className='py-5' fluid>
                         <Row className='justify-content-center'>

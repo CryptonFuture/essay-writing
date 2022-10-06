@@ -3,8 +3,8 @@ import { Container, Row, Col, Card, Button } from 'react-bootstrap'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Avatar from '../../assets/images/OurEssayWriter/Avatar.png'
 import Avatar1 from '../../assets/images/OurEssayWriter/Avatar1.png'
-import Avatar2 from '../../assets/images/OurEssayWriter/Avatar2.png'
-import Avatar3 from '../../assets/images/OurEssayWriter/Avatar3.png'
+import Avatar2 from '../../assets/images/Michel.jpg'
+import Avatar3 from '../../assets/images/Watson.jpg'
 import RatingStar from '../../components/RatingStar/RatingStar';
 import Group1 from '../../assets/images/OurEssayWriter/Group1.png'
 import Group2 from '../../assets/images/OurEssayWriter/Group2.png'
@@ -23,12 +23,10 @@ const OurEssayWriters = () => {
                         <Row className='justify-content-md-center'>
                             <Col md={6} className="">
                                 <h1 className='text-white text-center fw-bolder'>
-                                Our Dissertation
-Editing Writers
-                                
+                                    Our Dissertation Writers
+
                                 </h1>
-                                <p className='text-white text-center texted'>With our expert proficient writers, we deliver high-quality essay writing services
-in town</p>
+                                <p className='text-white text-center texted'>With our Professional and Qualified writers, we deliver unmatched and top-notch quality Dissertation Writing Services in town. Any Complexity-Any Subject-Any Deadline, We deliver as per our Promise! Order now and get the Best</p>
                             </Col>
                         </Row>
 
@@ -117,7 +115,7 @@ in town</p>
 
                                                         <span className='ms-3 span-text'>
                                                             Competence
-                                                            <h5 className=' text-font'>Competence in English Literature, Writing Studies, Philosophy, Communication</h5>
+                                                            <h5 className='text-font'>English, Literature, Writing Studies, Philosophy,Communication</h5>
                                                         </span>
                                                     </div>
                                                 </Row>
@@ -137,7 +135,7 @@ in town</p>
                                                 <div className='d-flex flex-row'>
                                                     <Card.Img variant="top" src={Avatar1} className="img-avatar" />
                                                     <span className='ms-2'>
-                                                        <span className='fw-bolder'>Siemen</span>
+                                                        <span className='fw-bolder'>Hannah</span>
                                                         <div className='d-flex flex-row mt-2'>
                                                             <RatingStar /> <span className='reviews ms-2'>4.8</span>
                                                         </div>
@@ -176,7 +174,7 @@ in town</p>
 
                                                         <span className='ms-3 span-text'>
                                                             Competence
-                                                            <h5 className=' text-font'>English, Literature, Writing Studies, Philosophy,Communication</h5>
+                                                            <h5 className='text-font'>English, Literature, Writing Studies, Philosophy,Communication</h5>
                                                         </span>
                                                     </div>
                                                 </Row>
@@ -196,7 +194,7 @@ in town</p>
                                                 <div className='d-flex flex-row'>
                                                     <Card.Img variant="top" src={Avatar2} className="img-avatar" />
                                                     <span className='ms-2'>
-                                                        <span className='fw-bolder'>Hannah</span>
+                                                        <span className='fw-bolder'>Siemen</span>
                                                         <div className='d-flex flex-row mt-2'>
                                                             <RatingStar /> <span className='reviews ms-2'>4.8</span>
                                                         </div>
@@ -256,7 +254,7 @@ in town</p>
                                                 <div className='d-flex flex-row'>
                                                     <Card.Img variant="top" src={Avatar3} className="img-avatar" />
                                                     <span className='ms-2'>
-                                                        <span className='fw-bolder'>Hannah</span>
+                                                        <span className='fw-bolder'>Watson</span>
                                                         <div className='d-flex flex-row mt-2'>
                                                             <RatingStar /> <span className='reviews ms-2'>4.8</span>
                                                         </div>
@@ -315,7 +313,7 @@ in town</p>
                                                 <div className='d-flex flex-row'>
                                                     <Card.Img variant="top" src={Avatar3} className="img-avatar" />
                                                     <span className='ms-2'>
-                                                        <span className='fw-bolder'>Hannah</span>
+                                                        <span className='fw-bolder'>Watson</span>
                                                         <div className='d-flex flex-row mt-2'>
                                                             <RatingStar /> <span className='reviews ms-2'>4.8</span>
                                                         </div>
