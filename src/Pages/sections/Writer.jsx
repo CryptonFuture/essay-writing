@@ -9,7 +9,7 @@ const Writer = () => {
         <>
             <section id='back-color'>
                 <section id='blur-bg'>
-                    <Container className='py-5' fluid>
+                    <Container className='py-5'>
                         <Row>
                             <Col md={4} className="text-center">
                                 <img src={Testimonial} className="testimonial-img" />

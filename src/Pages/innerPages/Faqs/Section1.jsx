@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Container, Col, Row, Accordion } from 'react-bootstrap'
 import CalculatePrice from '../../../components/Card/CalculatePrice'
 import PriceCalculate from '../../../components/Card/PriceCalculate'
+import ServiceForm from '../../../components/Card/ServiceForm'
 import { Accordian, Accordian1, Accordian2, Accordian5, Accordian6 } from '../../../Item/Accordion'
 
 const Section1 = () => {
@@ -12,7 +13,7 @@ const Section1 = () => {
                     <Container className='py-5'>
 
                         <Row>
-                            <Col md={6} className="cols-12">
+                            <Col md={7} className="cols-12">
                                 <h3 className='fw-bold'>Queries related to Our Orders</h3>
                                 <Accordion className='mt-4'>
                                     <div className='mt-3'>
@@ -251,9 +252,10 @@ const Section1 = () => {
                                
                             </Col>
 
-                            <Col md={6}>
+                            <Col md={5} className="col-wd-5">
                                 {/* <CalculatePrice />
                                 <PriceCalculate /> */}
+                                <ServiceForm />
                             </Col>
                         </Row>
                     </Container>

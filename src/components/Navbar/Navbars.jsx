@@ -46,133 +46,7 @@ const Navbars = () => {
 
   return (
     <>
-      {/* <nav>
-        <div className='wrapper'>
-          <div className='logo'><a href="#">CodingNepal</a></div>
-          <ul className='nav-links'>
-            <li><a href='#'>Home</a></li>
-            <li><a href='#'>About</a></li>
-            <li>
-              <a href='#'>Dropdown Menu</a>
-              <ul className='drop-menu'>
-                <li><a href='#'>Drop menu 1</a></li>
-                <li><a href='#'>Drop menu 2</a></li>
-                <li><a href='#'>Drop menu 3</a></li>
-                <li><a href='#'>Drop menu 4</a></li>
 
-              </ul>
-            </li>
-            <li>
-              <a href='#'>Mega Menu</a>
-              <div className='mega-box'>
-                <div className='content'>
-                <div className='row'>
-                    <img src="" alt="" />
-                  </div>
-                  <div className='row'>
-                    <header>Design Services</header>
-                    <ul className='mega-links'>
-                      <li><a href='#'>Drop menu 1</a></li>
-                      <li><a href='#'>Drop menu 2</a></li>
-                      <li><a href='#'>Drop menu 3</a></li>
-                      <li><a href='#'>Drop menu 4</a></li>
-                    </ul>
-                  </div>
-
-                  <div className='row'>
-                    <header>Design Services</header>
-                    <ul className='mega-links'>
-                      <li><a href='#'>Drop menu 1</a></li>
-                      <li><a href='#'>Drop menu 2</a></li>
-                      <li><a href='#'>Drop menu 3</a></li>
-                      <li><a href='#'>Drop menu 4</a></li>
-                    </ul>
-                  </div>
-
-                  <div className='row'>
-                    <header>Design Services</header>
-                    <ul className='mega-links'>
-                      <li><a href='#'>Drop menu 1</a></li>
-                      <li><a href='#'>Drop menu 2</a></li>
-                      <li><a href='#'>Drop menu 3</a></li>
-                      <li><a href='#'>Drop menu 4</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li><a href='#'>Feedback</a></li>
-          </ul>
-        </div>
-      </nav> */}
-
-      {/* <header>
-      <div className='containers-list'>
-        <div className='logo'></div>
-        <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li>
-              <a href="#">Services</a>
-              <div className='megamenu'>
-                  <div className='megamenuitems'>
-                    <h3>Web Devlopment</h3>
-                    <ul>
-                      <li>1</li>
-                      <li>2</li>
-                      <li>3</li>
-                      <li>4</li>
-                      <li>5</li>
-                      <li>6</li>
-                    </ul>
-                  </div>
-
-                  <div className='megamenuitems'>
-                    <h3>Web Devlopment</h3>
-                    <ul>
-                      <li>1</li>
-                      <li>2</li>
-                      <li>3</li>
-                      <li>4</li>
-                      <li>5</li>
-                      <li>6</li>
-                    </ul>
-                  </div>
-
-                  <div className='megamenuitems'>
-                    <h3>Web Devlopment</h3>
-                    <ul>
-                      <li>1</li>
-                      <li>2</li>
-                      <li>3</li>
-                      <li>4</li>
-                      <li>5</li>
-                      <li>6</li>
-                    </ul>
-                  </div>
-
-                  <div className='megamenuitems'>
-                    <h3>Web Devlopment</h3>
-                    <ul>
-                      <li>1</li>
-                      <li>2</li>
-                      <li>3</li>
-                      <li>4</li>
-                      <li>5</li>
-                      <li>6</li>
-                    </ul>
-                  </div>
-              </div>
-            </li>
-            <li><a href="#">Training</a></li>
-            <li><a href="#">Internship</a></li>
-            <li><a href="#">Student's Zone</a></li>
-            <li><a href="#">Testimonial</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header> */}
       <nav className='navbar active fixed-top navbar-expand-lg '>
         <div className="container">
           <a className="navbar-brand" href="#">
@@ -186,7 +60,9 @@ const Navbars = () => {
               <li className="nav-item">
                 <Link className="nav-link" aria-current="page" to="/">Home</Link>
               </li>
-            
+              <li className="nav-item">
+                <Link className="nav-link" aria-current="page" to="/blog">Blog</Link>
+              </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">Editing</a>
               </li>
@@ -214,31 +90,72 @@ const Navbars = () => {
           </div>
         </div>
       </nav>
-
-
+      {/* <nav>
+        <div class="wrapper">
+          <div class="logo"><span>Coding</span>Engineer</div>
+          <input type="radio" name="slider" id="menu-btn" />
+          <input type="radio" name="slider" id="close-btn" />
+          <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+            <li><a href="#">Home</a></li>
+            <li><Link to="/blog">Blog</Link></li>
+            <li>
+              <a href="#" class="desktop-item">Dropdown Menu</a>
+              <input type="checkbox" id="showDrop" />
+              <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+              <ul class="drop-menu">
+                <li><a href="#">Drop menu 1</a></li>
+                <li><a href="#">Drop menu 2</a></li>
+                <li><a href="#">Drop menu 3</a></li>
+                <li><a href="#">Drop menu 4</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="desktop-item">Mega Menu</a>
+              <input type="checkbox" id="showMega" />
+              <label for="showMega" class="mobile-item">Mega Menu</label>
+              <div class="mega-box">
+                <div class="content">
+                  <div class="row">
+                    <img src="Ape.png" alt="" />
+                  </div>
+                  <div class="row">
+                    <header>Mega 1 Services</header>
+                    <ul class="mega-links">
+                      <li><a href="#">UI/UX</a></li>
+                      <li><a href="#">Website Design</a></li>
+                      <li><a href="#">App Development</a></li>
+                      <li><a href="#">Custom Logo</a></li>
+                    </ul>
+                  </div>
+                  <div class="row">
+                    <header>Mega 2 Services</header>
+                    <ul class="mega-links">
+                      <li><a href="#">Business Email</a></li>
+                      <li><a href="#">Personal Email</a></li>
+                      <li><a href="#">Mobile Email</a></li>
+                      <li><a href="#">Website Marketing</a></li>
+                    </ul>
+                  </div>
+                  <div class="row">
+                    <header>Mega 3 Services</header>
+                    <ul class="mega-links">
+                      <li><a href="#">Website Hosting</a></li>
+                      <li><a href="#">Site Seal</a></li>
+                      <li><a href="#">Privacy Seal</a></li>
+                      <li><a href="#">Business Cards</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+        </div>
+      </nav> */}
     </>
-    // <Navbar expand="lg" fixed='top'>
-    //   <Container>
-    //     <Navbar.Brand href="#home">
-    //       <img src={Logo} />
-    //       <span className='ms-2 bolders'>Logo</span>
-    //     </Navbar.Brand>
-    //     <Navbar.Toggle aria-controls="basic-navbar-nav" />
-    //     <Navbar.Collapse id="basic-navbar-nav">
-    //       <Nav className='ms-auto links'>
-    //         <Nav.Link href="#home" className='ms-3'>Home</Nav.Link>
-    //         <Nav.Link href="#link" className='ms-3'>Dissertation Writing </Nav.Link>
-    //         <Nav.Link href="#home" className='ms-3'>Editing</Nav.Link>
-    //         <Nav.Link href="#link" className='ms-3'>Other Services </Nav.Link>
-    //         <Nav.Link href="#home" className='ms-3'>Review</Nav.Link>
-    //         <Nav.Link href="#link" className='ms-3'>Samples </Nav.Link>
-    //         <Button className="btns ms-3">
-    //           <span> Get Started</span>
-    //         </Button>
-    //       </Nav>
-    //     </Navbar.Collapse>
-    //   </Container>
-    // </Navbar>
+
   )
 }
 

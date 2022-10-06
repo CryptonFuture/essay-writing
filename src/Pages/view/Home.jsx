@@ -13,11 +13,12 @@ import PriceCalculate from '../sections/PriceCalculate'
 import Subject from '../sections/Subject'
 import Writer from '../sections/Writer'
 import Card5 from '../../components/Card/Card5'
+import Navbar from '../../components/Navbar/Navbar'
 
 const Home = () => {
   return (
     <>
-      <Navbars />
+      <Navbar />
       <Hero />
       <OurServices />
       <PriceCalculate />

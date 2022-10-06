@@ -25,8 +25,8 @@ const HowItWork = () => {
       </section>
       <Section1 />
       <Section2 />
-      <Footers />
-      <Footer />
+       <Footers />
+      <Footer /> 
     </>
   )
 }

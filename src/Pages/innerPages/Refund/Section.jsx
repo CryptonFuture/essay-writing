@@ -2,13 +2,14 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import Breadcrumbs from '../../../components/Breadcrumb/Breadcrumb'
 import CalculatePrice from '../../../components/Card/CalculatePrice'
+import ServiceForm from '../../../components/Card/ServiceForm'
 
 const Section = () => {
   return (
     <section id='refund'>
                 <Container className='py-5 py-mg'>
                     <Row>
-                        <Col md={6} className='col-ms'>
+                        <Col md={7} className='col-ms'>
                             <Breadcrumbs />
                             <h1 className='fw-bold'>Refund policy</h1>
                             <p>Our satisfaction rate is high. More than 95% of our Customers return with consequent orders. However, sometimes things can go wrong, and in these cases, you can always refer to our Refund Policy.</p>
@@ -91,8 +92,8 @@ const Section = () => {
                                 Normally, we will try to give you some warning before the new terms become effective. However, sometimes changes will need to be made immediately and if this happens, we will not give you any notice.</p>
                         </Col>
 
-                        <Col md={6}>
-                            <CalculatePrice />
+                        <Col md={5} className="col-wd-5">
+                            <ServiceForm />
                         </Col>
                     </Row>
                 </Container>

@@ -18,13 +18,13 @@ const Hero = () => {
 
         <Container className='hero_container'>
           <Row className="align-items-center">
-            <Col md={6}>
+            <Col md={7}>
               <div className='content'>
-                <h1>
-                  Ph.D. dissertation
-                  editing services</h1>
-                <p className='font-sizes'>Get the Best and Cheapest Ph.D. dissertation
-                  Editing Services in the UK Market now!</p>
+                <h1 className='fw-bold'>
+                  Ph.D. dissertation  editing services</h1>
+                <p className='font-sizes'>Get the Best and Cheapest Ph.D. dissertation <br /> Editing Services in the UK Market now! </p>
+               
+             
                 <Button className='btn'>
                   <span>Get 14 Days Free Trial</span>
                   {/* <i className="fa- fa-arrow-right paddings"></i> */}
@@ -33,7 +33,7 @@ const Hero = () => {
               </div>
               <Rating />
             </Col>
-            <Col md={6}>
+            <Col md={5}>
 
               {/* <Cards /> */}
               <CardForm />

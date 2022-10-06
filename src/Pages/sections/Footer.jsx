@@ -13,7 +13,7 @@ const Footer = () => {
                 <Container className='py-5'>
                     
 
-                    <Row className='margin-t'>
+                    <Row className='margin'>
                         <Col md={4}>
                             <img src={Logo} className="img-logo" />
                             {/* <span className='ms-2 bolders font-logo'>Logo</span> */}

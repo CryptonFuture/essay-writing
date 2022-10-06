@@ -2,6 +2,7 @@ import React from 'react'
 import Breadcrumbs from '../../../components/Breadcrumb/Breadcrumb'
 import { Col, Container, Row } from 'react-bootstrap'
 import CalculatePrice from '../../../components/Card/CalculatePrice'
+import ServiceForm from '../../../components/Card/ServiceForm'
 
 const section = () => {
     return (
@@ -9,7 +10,7 @@ const section = () => {
             <section id="privacy">
                 <Container className='py-5 py-mg'>
                     <Row>
-                        <Col md={6} className='col-ms'>
+                        <Col md={7} className='col-ms'>
                             <Breadcrumbs />
                             <h1 className='fw-bold mt-3'>Privacy policy</h1>
                             <p>We follow a proper privacy policy to ensure that our customer&#39;s information is safe and secure and is in the right hands.</p>
@@ -24,9 +25,9 @@ const section = () => {
                             </ul>
                         </Col>
 
-                        {/* <Col md={6}>
-                            <CalculatePrice />
-                        </Col> */}
+                        <Col md={5} className="col-wd-5">
+                            <ServiceForm />
+                        </Col>
                     </Row>
                 </Container>
             </section>

@@ -15,7 +15,7 @@ const Reviews = () => {
             <section id='reviews'>
                 <Container>
                     <Row>
-                        <Col md={12} className="marg-tp heads">
+                        <Col md={12} className="marg-tp heads  mb-5">
                         {/* <img src={Layer} className="layers-6" /> */}
                             <h1 className='text-center text-h1'>What  Customers Think <br />About Website</h1>
                         </Col>
