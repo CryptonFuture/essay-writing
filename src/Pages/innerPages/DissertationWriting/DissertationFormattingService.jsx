@@ -13,16 +13,17 @@ import OurFeatured from '../../sections/OurFeatured'
 import PopularQuestions from '../../sections/PopularQuestions'
 import Subject from '../../sections/Subject'
 import Writer from '../../sections/Writer'
+import Navbar from '../../../components/Navbar/Navbar'
 
 
 const DissertationFormattingService = () => {
     return (
         <div>
-            <Navbars />
+            <Navbar />
             <section id='DissertationFormatting'>
-                <Container className='py-5 p-5 mt-5'>
+                <Container className='py-5 mt-5'>
                     <Row>
-                        <Col md={6}>
+                        <Col md={7}>
                             <Breadcrumbs />
                             <h1 className='fw-bold'>Dissertation Formatting Service</h1>
                             <p>Stun your university professors by hiring our expert’s Dissertation Formatting Service and give your dissertation a flawless look!</p>
@@ -61,7 +62,7 @@ const DissertationFormattingService = () => {
 
                         </Col>
 
-                        <Col md={6}>
+                        <Col md={5}>
                             <ServiceForm />
                         </Col>
                     </Row>

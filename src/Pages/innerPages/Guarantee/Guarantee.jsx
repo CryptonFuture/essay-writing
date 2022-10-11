@@ -9,16 +9,17 @@ import Foot from '../../../Pages/sections/Foot'
 import Footers from '../../../Pages/sections/Footers'
 import Footer from '../../../Pages/sections/Footer'
 import Card4 from '../../../components/Card/Card4'
+import Navbar from '../../../components/Navbar/Navbar'
 
 const Guarantee = () => {
     return (
         <>
-            <Navbars />
+            <Navbar />
             <section id='guarantee'>
                 <Container>
                     <Row>
-                        <Col md={12} className="marg-tp-1 headings">
-                            <h1 className='text-center text-h1'>Our Guarantees</h1>
+                        <Col md={12} className="marg-tp-1 mb-5">
+                            <h1 className='text-center fw-bold'>Our Guarantees</h1>
                         </Col>
                     </Row>
                 </Container>

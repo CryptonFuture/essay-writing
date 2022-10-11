@@ -168,4 +168,9 @@
     object-fit: cover;
   } */
 
-  
+  /* .navbar.active {
+    background-color: white !important;
+    opacity: 1.0;
+    box-shadow: 0px 0px 10px 0px #8e79fb;
+    transition: all 0.2s;
+  } */

@@ -13,15 +13,16 @@ import OurFeatured from '../../sections/OurFeatured'
 import Subject from '../../sections/Subject'
 import OurEssayWriters from '../../sections/OurEssayWriters'
 import DummyText from '../../sections/DummyText'
+import Navbar from '../../../components/Navbar/Navbar'
 
 const DissertationDiscussionWritingServices = () => {
     return (
         <div>
-            <Navbars />
+            <Navbar />
             <section id='DissertationDiscussion'>
-                <Container className='py-5 p-5 mt-5'>
+                <Container className='py-5 mt-5'>
                     <Row>
-                        <Col md={6}>
+                        <Col md={7}>
                             <Breadcrumbs />
                             <h1 className='fw-bold'>Dissertation Discussion Writing Services</h1>
                             <p>Astonish your supervisors now with our Dissertation Discussion Writing Services! – The Best in town</p>
@@ -59,7 +60,7 @@ const DissertationDiscussionWritingServices = () => {
 
                         </Col>
 
-                        <Col md={6}>
+                        <Col md={5}>
                             <ServiceForm />
                         </Col>
                     </Row>

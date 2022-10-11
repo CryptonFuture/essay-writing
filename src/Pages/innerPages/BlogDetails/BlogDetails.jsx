@@ -15,6 +15,9 @@ import Footers from '../../sections/Footers'
 import Foot from '../../sections/Foot'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
+import { Image } from 'antd';
+import Navbar from '../../../components/Navbar/Navbar'
+
 
 
 const BlogDetails = () => {
@@ -45,7 +48,7 @@ const BlogDetails = () => {
     return (
         <>
             <section id="blog_details">
-                <Navbars />
+                <Navbar />
                 <Container className='py-5 p-5 mt-5'>
                     <Row className="justify-content-center mt-5">
                         <Col md={6} className="">
@@ -61,17 +64,23 @@ const BlogDetails = () => {
                 <Container>
                     <Row>
                         <Col md={8} className="mt-5">
-                            <img src={img} alt="" className='img-fluid' />
+
                             <img src={Layers1} alt="" className='img-fluid mt-3' />
                             <span className='ms-3 fw-bold'>Owens Loren</span>
-                            <span className='ms-3 text-secondary'><i class="fa-regular fa-calendar"></i> August 10, 2022</span>
-                            <span className='ms-3 text-secondary'><i class="fa-regular fa-eye"></i> 811 views</span>
+                            {/* <img src={img} alt="" className='img-fluid mt-3' /> */}
+                            <Image
+                                className='img-fluid mt-3'
+                                // width={200}
+                                src={img}
+                            />
+                            {/* <span className='ms-3 text-secondary'><i class="fa-regular fa-calendar"></i> August 10, 2022</span>
+                            <span className='ms-3 text-secondary'><i class="fa-regular fa-eye"></i> 811 views</span> */}
                             <h3 className='mt-3 fw-bold'>{title}</h3>
-                            <p className='blog_font_size'>{short_des}</p>
+                            <p dangerouslySetInnerHTML={{ __html: short_des }} className='blog_font_size'></p>
 
-                            <p className='blog_font_size'>{long_des}</p>
+                            <p dangerouslySetInnerHTML={{ __html: long_des }} className='blog_font_size'></p>
 
-                            {/* <Card className='border-0 p-3'>
+                            <Card className='border-0 p-3'>
                                 <Card.Body className='p-3 card-right-border'>
                                     <Card.Title className='cards-titles'><span className='card-spans'>This is going to be a challenging dance. Our teachers are true change makers. They are providers and they are leaders and this period in history is going to shine a light on their vital role in our children’s emotional health.</span></Card.Title>
                                 </Card.Body>
@@ -111,7 +120,7 @@ const BlogDetails = () => {
 
                             </div>
 
-                            <hr /> */}
+                            <hr />
 
 
 
@@ -222,7 +231,7 @@ const BlogDetails = () => {
                         </Col>
 
                     </Row>
-                    {/* <Row>
+                    <Row>
                         <Col md={3}>
                             <Card className='border-0 card-grey'>
                                 <Card.Body>
@@ -248,15 +257,15 @@ const BlogDetails = () => {
                                 </Card.Body>
                             </Card>
                         </Col>
-                    </Row> */}
+                    </Row>
 
-                    {/* <Row>
+                    <Row>
                         <Col md={6} className="mt-3">
                             <h6 className='fw-bold'>Related Posts</h6>
                         </Col>
-                    </Row> */}
+                    </Row>
 
-                    {/* <Row>
+                    <Row>
                         <Col md={4}>
                             <Card className='border-0 shadow'>
                                 <Card.Img variant="top" src={layer2} />
@@ -310,7 +319,7 @@ const BlogDetails = () => {
                                 </Card.Body>
                             </Card>
                         </Col>
-                    </Row> */}
+                    </Row>
                 </Container>
             </section>
             <Foot />

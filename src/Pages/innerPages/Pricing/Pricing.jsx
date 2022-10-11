@@ -7,11 +7,12 @@ import Foot from '../../../Pages/sections/Foot'
 import Footers from '../../../Pages/sections/Footers'
 import Footer from '../../../Pages/sections/Footer'
 import Layer from '../../../assets/images/AboutUs/Layer.png'
+import Navbar from '../../../components/Navbar/Navbar'
 
 const Pricing = () => {
     return (
         <>
-            <Navbars />
+            <Navbar />
             <section id='bg-blue'>
                 <Container>
                     <Row>

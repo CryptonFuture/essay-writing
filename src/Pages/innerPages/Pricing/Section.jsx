@@ -21,12 +21,23 @@ const Section = () => {
                                 other assignment writing service providers. We make sure that our prices are affordable
                                 for every student as we fully understand student’s limited budget. Moreover, our pricing
                                 plan comprises of</p>
-                            <div className='d-flex flex-row justify-content-center mar'>
-                                <Button className='btn-write'><img src={pen} className="img-button" />Writing</Button>
-                                <Button className='ms-4 btn-write-1'><img src={eye} className="img-button" /><span className='ms-2'> Editing & Proofreading </span></Button>
-                                <Button className='ms-4 btn-write'><img src={screen} className="img-button" /><span className='ms-2'>Presentation</span></Button>
+                            {/* <div className='d-flex flex-row justify-content-center mar'> */}
+                                <Row>
+                                    <Col md={4}>
+                                        <Button className='btn-write' size='lg'><img src={pen} className="img-button" />Writing</Button>
+                                        
+                                    </Col>
 
-                            </div>
+                                    <Col  md={4}>
+                                        <Button className='btn-write-1' size='lg'><img src={eye} className="img-button" /><span className='ms-2'> Editing & Proofreading </span></Button>
+                                    </Col>
+
+                                    <Col  md={4}>
+                                        <Button className='btn-write' size='lg'><img src={screen} className="img-button" /><span className='ms-2'>Presentation</span></Button>
+
+                                    </Col>
+                                </Row>
+                            {/* </div> */}
                         </Col>
                         <Tables />
                     </Row>

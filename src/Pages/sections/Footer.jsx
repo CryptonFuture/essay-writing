@@ -4,6 +4,7 @@ import Logo from '../../assets/images/Logo/Logo1.png'
 import facebook from '../../assets/images/Social-Icon/facebook.png'
 import Twitter from '../../assets/images/Social-Icon/twitter.png'
 import Instagram from '../../assets/images/Social-Icon/instagram.png'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
@@ -56,16 +57,16 @@ const Footer = () => {
                             <h6 className='fw-bolder'>Client Area</h6>
                             <ListGroup>
                                 <ListGroup.Item className='transparents'>
-                                   <a href='#'>About Us</a> 
+                                   <Link to='/about-us'>About Us</Link> 
                                 </ListGroup.Item>
                                 <ListGroup.Item className='transparents'>
-                                    <a href='#'> How it Works</a> 
+                                    <Link to='/how-it-work'> How it Works</Link> 
                                 </ListGroup.Item>
                                 <ListGroup.Item className='transparents'>
-                                    <a href='#'>Pricing</a> 
+                                    <Link to='/pricing'>Pricing</Link> 
                                 </ListGroup.Item>
                                 <ListGroup.Item className='transparents'>
-                                    <a href='#'>FAQS</a> 
+                                    <Link to='/faqs'>FAQS</Link> 
                                 </ListGroup.Item>
                                 <ListGroup.Item className='transparents'>
                                     <a href='#'> Referral Program</a> 
@@ -113,22 +114,22 @@ const Footer = () => {
                             <h6 className='fw-bolder'>Policy</h6>
                             <ListGroup>
                                 <ListGroup.Item className='transparents'>
-                                   <a href='#'>Terms of Use</a> 
+                                   <Link to='/terms-us'>Terms of Use</Link> 
                                 </ListGroup.Item>
                                 <ListGroup.Item className='transparents'>
-                                    <a href='#'> Privacy Policy</a> 
+                                    <Link to='/privacy'> Privacy Policy</Link> 
                                 </ListGroup.Item>
                                 <ListGroup.Item className='transparents'>
-                                    <a href='#'>Revision Policy</a> 
+                                    <Link to='/revision'>Revision Policy</Link> 
                                 </ListGroup.Item>
                                 <ListGroup.Item className='transparents'>
-                                    <a href='#'>Cookie Policy</a> 
+                                    <Link to='/cookie'>Cookie Policy</Link> 
                                 </ListGroup.Item>
                                 <ListGroup.Item className='transparents'>
-                                    <a href='#'> Guarantee</a> 
+                                    <Link to='/guarantee'> Guarantee</Link> 
                                 </ListGroup.Item>
                                 <ListGroup.Item className='transparents'>
-                                    <a href='#'>Money Back Guarantee</a> 
+                                    <Link to='/MoneyBackGuarantee'>Money Back Guarantee</Link> 
                                 </ListGroup.Item>
                                 <ListGroup.Item className='transparents'>
                                     <a href='#'>Rules of Conduct</a> 

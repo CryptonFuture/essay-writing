@@ -24,9 +24,34 @@ body {
 
 #about-us {
   background-image: url('./assets/images/Guarantee/Layer8.png');
-  background-position: center;
-  background-size: cover;
+  background-position: top center;
+  background-size: contain;
+  height: 100%;
 }
+
+/* DissertationDataAnalysisServices start */
+
+#DissertationDataAnalysisServices {
+  background-image: url('./assets/images/faqs/Group1.png');
+  background-position: top left;
+  background-size: auto;
+  height: 100%;
+}
+
+/* DissertationDataAnalysisServices end  */
+
+.money-back {
+  font-size: 12px;
+}
+
+#money-back-guarantee {
+  background-image: url('./assets/images/Guarantee/Layer8.png');
+  background-position: top center;
+  background-size: cover;
+  height: 100%;
+}
+
+
 
 /* .img {
   position: absolute !important;
@@ -136,7 +161,13 @@ body {
   background: linear-gradient(#8e79fb, #7c41a5) !important;
   border: 0 !important;
   padding: 10px 50px !important;
-  transition: 0.3s !important;
+  transition: transform 0.3s ease-in-out !important;
+  box-shadow: 0px 5px 10px 0px #c35cff;
+
+}
+
+.gradient:hover {
+  transform: translateY(-5px);
 }
 
 
@@ -147,10 +178,12 @@ body {
   padding: 10px 50px !important;
   transition: 0.3s !important;
   box-shadow: 0px 8px 10px 0px #282bab !important;
+  transition: transform 0.2s ease-in-out !important;
 }
 
 .gradient-1:hover {
   background: linear-gradient(#7c41a5, #8e79fb) !important;
+  transform: translateY(-5px);
 
 }
 
@@ -735,7 +768,12 @@ body {
   font-weight: bold;
   background-color: #7b3da0;
   border: 0;
-  transition: 0.3s;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0px 5px 10px 0px #c35cff;
+}
+
+.content .btn:hover {
+  transform: translateY(-5px);
 }
 
 .paddings {
@@ -781,8 +819,9 @@ body {
 
 #imgs-hero {
   background-image: url('./assets/images/services/Layers.png');
-  background-position: center;
+  background-position:  center;
   background-size: cover;
+  height: 100%;
 }
 
 .card-transistions {
@@ -882,6 +921,12 @@ body {
 .btn-bg-color {
   background-color: #7b3da0 !important;
   border: 0px !important;
+  box-shadow: 0px 5px 10px 0px #c35cff;
+  transition: transform 0.2s ease-in-out !important;
+}
+
+.btn-bg-color:hover {
+  transform: translateY(-5px);
 }
 
 
@@ -970,7 +1015,7 @@ body {
 
 #neon-img {
   background-image: url('./assets/images/services/Layers.png');
-  background-position: center;
+  background-position: top center;
   background-size: cover;
 }
 
@@ -1050,6 +1095,12 @@ body {
   background-color: #7b3da0 !important;
   border: 0px !important;
   padding: 10px 50px !important;
+  box-shadow: 0px 5px 10px 0px #c35cff;
+  transition: transform 0.2s ease-in-out !important;
+}
+
+.bg-prim:hover {
+  transform: translateY(-5px);
 }
 
 .images {
@@ -1070,13 +1121,14 @@ body {
 /* Customer Review */
 
 #customer-bg {
-  background-color: #fafaff !important
+  /* background-color: #fafaff !important */
 }
 
 #customer-hero {
   background-image: url('./assets/images/services/Layers.png');
-  background-position: center;
+  background-position:  center;
   background-size: cover;
+  height: 100%;
 }
 
 .img-avatars {
@@ -1098,7 +1150,7 @@ body {
 /* Dummy Text */
 
 .your-text {
-  font-size: 12px;
+  font-size: 0.875rem !important;
   color: #434445;
 }
 
@@ -1302,6 +1354,7 @@ body {
 .sizes-1 {
   width: 100%;
   max-width: 100px;
+  height: 100%;
 }
 
 .head h1 {
@@ -1316,14 +1369,14 @@ body {
   background-image: url('./assets/images/AboutUs/Rectangle.png');
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
 }
 
 #section3 {
   background-image: url('./assets/images/background2.png');
   background-position: top center;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
 }
 
 .section-font {
@@ -1343,6 +1396,12 @@ body {
   width: 150px;
   transition: ease-out 0.4s;
   box-shadow: inset 0 0 0 0 #7b3da0;
+  box-shadow: 0px 5px 10px 0px #c35cff;
+  transition: transform 0.2s ease-in-out !important;
+}
+
+.get-started:hover {
+  transform: translateY(-5px);
 }
 
 /* FAQS */
@@ -1369,13 +1428,20 @@ body {
   height: 100%;
 }
 
+#DissertationWritingServices {
+  background-image: url('./assets/images/faqs/Group1.png');
+  background-position: top center;
+  background-size: cover;
+  height: 100%;
+}
+
 .timeline {
   position: relative;
   max-width: 1200px;
   margin: 100px auto;
 }
 
-.container-1 {
+.container-3 {
   padding: 10px 50px;
   position: relative;
   width: 50%;
@@ -1396,27 +1462,27 @@ body {
   }
 }
 
-.container-1:nth-child(1) {
+.container-3:nth-child(1) {
   animation-delay: 0s;
 }
 
-.container-1:nth-child(2) {
+.container-3:nth-child(2) {
   animation-delay: 1s;
 }
 
-.container-1:nth-child(3) {
+.container-3:nth-child(3) {
   animation-delay: 2s;
 }
 
-.container-1:nth-child(4) {
+.container-3:nth-child(4) {
   animation-delay: 3s;
 }
 
-.container-1:nth-child(5) {
+.container-3:nth-child(5) {
   animation-delay: 4s;
 }
 
-.container-1:nth-child(6) {
+.container-3:nth-child(6) {
   animation-delay: 5s;
 }
 
@@ -1427,7 +1493,16 @@ body {
   position: relative;
   border-radius: 6px;
   font-size: 12px;
-  box-shadow: 0px 5px 10px 0px lightgray;
+  /* box-shadow: 0px 5px 10px 0px lightgray; */
+  box-shadow: 0 2px 10px rgba(124,65,165,0.3);
+}
+
+.text-box1 {
+  box-shadow: 0 2px 10px rgba(255,127,127,0.3);
+}
+
+.text-box2 {
+  box-shadow: 0 2px 10px rgba(120, 193, 255, 0.3);
 }
 
 .left-container {
@@ -1438,7 +1513,7 @@ body {
   left: 50%;
 }
 
-.container-1 img {
+.container-3 img {
   position: absolute;
   width: 25px;
   border-radius: 50%;
@@ -1446,6 +1521,8 @@ body {
   top: 40px;
   z-index: 10;
 }
+
+
 
 .timeline::after {
   content: '';
@@ -1494,6 +1571,15 @@ body {
   border-left: 15px solid #5f2184;
   right: -15px;
 }
+
+.left-container-arrow-1 {
+  border-left: 15px solid #ff7f7f;
+}
+
+.left-container-arrow-3 {
+  border-left: 15px solid #78c1ff;
+}
+
 
 .right-container-arrow {
   height: 0;
@@ -1598,35 +1684,41 @@ body {
 
 .btn-write {
   background-color: transparent !important;
-  border: 1px solid #5f2184 !important;
+  border: 2px solid #5f2184 !important;
   width: 100%;
-  max-width: 200px !important;
+  font-weight: bold;
+  /* max-width: 200px !important; */
   color: black !important;
   font-weight: bold !important;
+  font-size: 14px !important;
 }
 
 .btn-write:hover {
   color: white !important;
-  background-color: #5d51e4 !important;
+  background-color: #5f2184 !important;
+  box-shadow: 0 6px 10px rgb(124 65 165 / 50%);
 }
 
 .img-button {
   width: 100%;
-  max-width: 25px;
+  max-width: 20px;
 }
 
 .btn-write-1 {
   background-color: transparent !important;
-  border: 1px solid #5f2184 !important;
+  border: 2px solid #5f2184 !important;
   width: 100%;
-  max-width: 300px !important;
+  font-weight: bold;
+  font-size: 14px !important;
+  /* max-width: 300px !important; */
   color: black !important;
   font-weight: bold !important;
 }
 
 .btn-write-1:hover {
   color: white !important;
-  background-color: #5d51e4 !important;
+  background-color: #5f2184 !important;
+  box-shadow: 0 6px 10px rgb(124 65 165 / 50%);
 }
 
 /* TABLE */
@@ -1672,6 +1764,12 @@ td {
   border: 0px !important;
   width: 100%;
   max-width: 200px;
+  box-shadow: 0px 5px 10px 0px #c35cff;
+  transition: transform 0.2s ease-in-out !important;
+}
+
+.load-more:hover {
+  transform: translateY(-5px);
 }
 
 /* COOKIE */
@@ -1687,9 +1785,42 @@ td {
 
 }
 
+#PhDDataCollectionHelp {
+  background-image: url('./assets/images/faqs/Group1.png');
+  background-position: top left;
+  background-size: auto;
+}
+
 .py-mg {
   margin-top: 4%;
   font-size: 12px;
+}
+
+#refer {
+  background-image: url('./assets/images/Guarantee/Layer8.png');
+  background-position: top left;
+  background-size: contain;
+}
+
+#Referrals {
+  background-image: url('./assets/images/AboutUs/Background.png');
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+.img-speaker {
+  width: 100%;
+  max-width: 100px;
+  height: 100%;
+  max-height: 100px;
+}
+
+#Referrals-1 {
+  background-image: url('./assets/images/Guarantee/Layer8.png');
+  background-position: top center;
+  background-size: cover;
+  height: 100%;
 }
 
 /* GUARANTEE */
@@ -1698,11 +1829,11 @@ td {
   background-image: url('./assets/images/AboutUs/Background.png');
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
 }
 
 .marg-tp-1 {
-  margin-top: 25% !important;
+  margin-top: 12% !important;
 }
 
 .fs-7 {
@@ -1716,6 +1847,8 @@ td {
   max-width: 160px;
   font-size: 14px !important;
   padding: 10px !important;
+  box-shadow: 0px 5px 10px 0px #c35cff;
+
 }
 
 .bg-purple:hover {
@@ -1753,7 +1886,7 @@ td {
   background-image: url('./assets/images/Guarantee/Layer8.png');
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
 }
 
 .font-friend {
@@ -1769,7 +1902,9 @@ td {
 /* REFUND */
 #refund {
   background-image: url('./assets/images/faqs/Group1.png');
-  background-position: left;
+  background-position: top left;
+  background-size: cover;
+  height: 100%;
 }
 
 /* REVISION */
@@ -1783,7 +1918,7 @@ td {
   background-image: url('./assets/images/Guarantee/Layer8.png');
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
 }
 
 .font-choose {
@@ -1881,6 +2016,10 @@ td {
   position: relative;
   top: -780px;
   left: -30px;
+}
+
+.flip-right {
+  text-align: right;
 }
 
 .fonts-flip {
@@ -2070,6 +2209,12 @@ td {
   padding-right: 10% !important;
   padding-top: 2% !important;
   font-size: 14px !important;
+  box-shadow: 0px 5px 10px 0px #c35cff;
+  transition: transform 0.2s ease-in-out !important;
+}
+
+.blog_button:hover {
+  transform: translateY(-5px);
 }
 
 .form_control {
@@ -2147,6 +2292,7 @@ td {
 
 .breadcrumbs {
   font-size: 14px !important;
+  box-shadow: 0px 0px 0px 0px transparent !important;
 }
 
 
@@ -2445,6 +2591,16 @@ td {
 }
 
 /* MBADissertationProposalHelp end */
+
+/* PrimaryDataCollectionHelp start */
+
+#PrimaryDataCollectionHelp {
+  background-image: url('./assets/images/faqs/Group1.png');
+  background-position: top left;
+  background-size: auto;
+}
+
+/* PrimaryDataCollectionHelp end */
 
 #PhDdissertation {
   background-image: url('./assets/images/faqs/Group1.png');
@@ -3919,7 +4075,7 @@ td {
 /* mobile */
 @media only screen and (max-width: 390px) {
     .cards-1 {
-      margin-left: 3%;
+      /* margin-left: 3%; */
       width: 100%;
     }
 
@@ -4083,7 +4239,7 @@ td {
 
 @media only screen and (min-width: 414px) {
   .cards-1 {
-    margin-left: 3%;
+    /* margin-left: 3%; */
     width: 100%;
   }
 
@@ -4230,7 +4386,7 @@ td {
 
 @media only screen and (min-width: 393px) {
   .cards-1 {
-    margin-left: 3%;
+    /* margin-left: 3%; */
     width: 100%;
   }
 
@@ -4379,7 +4535,7 @@ td {
 
 @media only screen and (min-width: 360px) {
   .cards-1 {
-    margin-left: 3%;
+    /* margin-left: 3%; */
     width: 100%;
   }
 
@@ -4528,7 +4684,7 @@ td {
 
 @media only screen and (min-width: 412px) {
   .cards-1 {
-    margin-left: 3%;
+    /* margin-left: 3%; */
     width: 100%;
   }
 
@@ -4730,6 +4886,26 @@ td {
     font-size: 30px ;
   } */
 
+  .btn-write {
+    margin: 3% 0;
+  }
+
+  .cards-2 {
+    width: 100% !important;
+  }
+
+  .card-radius {
+    width: 100% !important;
+  }
+
+  .writer {
+    text-align: center;
+  }
+
+  .cards-1 {
+    width: 100%;
+  }
+
   .img-book {
     display: none;
   }
@@ -4737,7 +4913,7 @@ td {
   .content h1 {
     font-size: 30px;
     text-align: center;
-    margin-top: 50% !important;
+    margin-top: 40% !important;
   }
 
   .content p {
@@ -4761,7 +4937,7 @@ td {
     font-size: 30px;
   } */
 
-  
+ 
   
 }
 
@@ -4777,6 +4953,8 @@ td {
   .content p {
     text-align: left;
   } */
+
+ 
 
   .col-wd-5 {
     width: 100% !important;
@@ -4838,16 +5016,18 @@ td {
 @media screen and (max-width: 600px) {
   .timeline {
     margin: 50px auto;
+    
   }
 
   .timeline::after {
     left: 31px;
   }
 
-  .container-1 {
+  .container-3 {
     width: 100%;
     padding-left: 80px;
     padding-right: 25px;
+    
   }
 
   .text-box {

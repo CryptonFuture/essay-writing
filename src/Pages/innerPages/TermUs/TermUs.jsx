@@ -4,11 +4,12 @@ import Section from '../TermUs/Section'
 import Foot from '../../sections/Foot'
 import Footers from '../../sections/Footers'
 import Footer from '../../sections/Footer'
+import Navbar from '../../../components/Navbar/Navbar'
 
 const TermUs = () => {
   return (
     <>
-        <Navbars />
+        <Navbar />
         <Section />
         <Foot />
         <Footer />

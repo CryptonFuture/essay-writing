@@ -4,11 +4,12 @@ import Section from '../../innerPages/Cookie/Section'
 import Foot from '../../sections/Foot'
 import Footer from '../../sections/Footer'
 import Footers from '../../sections/Footers'
+import Navbar from '../../../components/Navbar/Navbar'
 
 const Cookie = () => {
     return (
         <>
-            <Navbars />
+            <Navbar />
             <Section />
             <Foot />
             <Footer />

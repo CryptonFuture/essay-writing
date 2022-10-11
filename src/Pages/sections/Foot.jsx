@@ -13,10 +13,8 @@ const Foot = () => {
                             <Col md={12} className="p-5 footer">
                                 <h1 className='text-center text-white fw-bolder'>
                                     Still Have
-                                    <span>
-                                        <img src={Line} className="layer-img-10" />
-                                    </span>
-                                    <span className='positions-10'>Questions?</span>
+                                  
+                                    Questions?
                                 </h1>
                                 <p className='text-center text-white '>Find answers in our FAQS or contact out Support Team.</p>
                                 <h1 className='text-center text-white'>1-888-318-0063</h1>

@@ -13,15 +13,16 @@ import OurFeatured from '../../sections/OurFeatured'
 import Subject from '../../sections/Subject'
 import OurEssayWriters from '../../sections/OurEssayWriters'
 import DummyText from '../../sections/DummyText'
+import Navbar from '../../../components/Navbar/Navbar'
 
 const Cheaplawdissertationwritingservice = () => {
   return (
     <div>
-        <Navbars />
+        <Navbar />
         <section id='Cheaplaw'>
-          <Container className='py-5 p-5 mt-5'>
+          <Container className='py-5 mt-5'>
             <Row>
-              <Col md={6}>
+              <Col md={7}>
                 <Breadcrumbs />
                 <h1 className='fw-bold'>Cheap law dissertation writing service</h1>
                 <p>Now no more worries with Dissertation Writing, Get the Best Cheap Law Dissertation Writing Service In town!</p>
@@ -59,7 +60,7 @@ const Cheaplawdissertationwritingservice = () => {
 
               </Col>
 
-              <Col md={6}>
+              <Col md={5}>
                 <ServiceForm />
               </Col>
             </Row>

@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle'
 import 'animate.css';
 import 'swiper/css';
+import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

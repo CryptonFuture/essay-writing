@@ -91,10 +91,8 @@ const PopularQuestions = () => {
                                             <Col md={12} className="p-5 col-footer">
                                                 <h1 className='text-center text-white fw-bolder'>
                                                     Still Have
-                                                    <span>
-                                                        <img src={Line} className="layer-img-10" />
-                                                    </span>
-                                                    <span className='positions-10'>Questions?</span>
+                                                    
+                                                   Questions?
                                                 </h1>
                                                 <p className='text-center text-white foot_contact'>Find answers in our FAQS or contact out Support Team.</p>
                                                 <h1 className='text-center text-white foot_h1'>1-888-318-0063</h1>

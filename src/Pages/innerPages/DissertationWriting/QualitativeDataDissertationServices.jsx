@@ -12,15 +12,16 @@ import OurFeatured from '../../sections/OurFeatured'
 import PopularQuestions from '../../sections/PopularQuestions'
 import Subject from '../../sections/Subject'
 import Writer from '../../sections/Writer'
+import Navbar from '../../../components/Navbar/Navbar'
 
 const QualitativeDataDissertationServices = () => {
   return (
     <div>
-        <Navbars />
+        <Navbar />
         <section id='QualitativeData'>
-            <Container className='py-5 p-5 mt-5'>
+            <Container className='py-5 mt-5'>
                 <Row>
-                    <Col md={6}>
+                    <Col md={7}>
                         <Breadcrumbs />
                         <h1>Qualitative Data Dissertation Services</h1>
                         <p>Seeking a Qualitative Data Dissertation Services? Look no further! You’re in the right place to get A-Z assistance</p>
@@ -59,7 +60,7 @@ const QualitativeDataDissertationServices = () => {
 
                     </Col>
 
-                    <Col md={6}>
+                    <Col md={5}>
                         <ServiceForm />
                     </Col>
                 </Row>

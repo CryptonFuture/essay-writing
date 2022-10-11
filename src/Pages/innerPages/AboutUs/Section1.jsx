@@ -8,7 +8,7 @@ import Layer from '../../../assets/images/AboutUs/Layer.png'
 const Section1 = () => {
     return (
         <>
-            <Container className='py-5 container-1'>
+            <Container className='py-5 container-2'>
                 <Row className='rows align-items-center'>
                     <Col md={7} className=" para cols-1">
                         <h1 className='font-h1'>Who Are We?</h1>

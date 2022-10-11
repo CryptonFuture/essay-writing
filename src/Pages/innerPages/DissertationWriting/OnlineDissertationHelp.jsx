@@ -13,15 +13,16 @@ import OurFeatured from '../../sections/OurFeatured'
 import PopularQuestions from '../../sections/PopularQuestions'
 import Subject from '../../sections/Subject'
 import Writer from '../../sections/Writer'
+import Navbar from '../../../components/Navbar/Navbar'
 
 const OnlineDissertationHelp = () => {
     return (
         <div>
-            <Navbars />
+            <Navbar />
                 <section id='OnlineDissertationHelp'>
-                    <Container className='py-5 p-5 mt-5'>
+                    <Container className='py-5 mt-5'>
                         <Row>
-                            <Col md={6}>
+                            <Col md={7}>
                                 <Breadcrumbs />
                                 <h1 className='fw-bold'>Online Dissertation Help</h1>
                                 <p>Online Dissertation Help from market experts has now become easy! Any complexity, any subject any deadline, 100% Confidential.</p>
@@ -58,7 +59,7 @@ const OnlineDissertationHelp = () => {
                                 <p>Enabling our client's full privacy for the order placed, we never compromise on such things</p>
                             </Col>
 
-                            <Col md={6}>
+                            <Col md={5}>
                                 <ServiceForm />
                             </Col>
                         </Row>

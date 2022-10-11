@@ -1,20 +1,33 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../../components/css/Navbars.css'
 import Logo1 from '../../assets/images/Logo/Logo1.png'
 import { Link } from 'react-router-dom'
+import {Button} from 'react-bootstrap'
 
 const Navbar = () => {
+    const [navbar, setNavbar] = useState(false)
+
+    const changeBackground = () => {
+        if (window.scrollY >= 80) {
+            setNavbar(true)
+        } else {
+            setNavbar(false)
+        }
+    }
+
+    window.addEventListener('scroll', changeBackground)
+
     return (
         <>
-            <nav className='fixed-top navbar-expand-lg '>
+            <nav className='fixed-top navbar-expand-lg'>
                 <div class="wrapper">
                     <div class="logo"><a href="#"> <img src={Logo1} className="img-logo" /></a></div>
                     <input type="radio" name="slider" id="menu-btn" />
                     <input type="radio" name="slider" id="close-btn" />
-                   
+
                     <ul class="nav-links">
                         <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-                        <li><a href="#">Home</a></li>
+                        <li><Link to="/" className='active'>Home</Link></li>
                         <li><Link to="/blog">Blog</Link></li>
                         {/* <li>
                             <a href="#" class="desktop-item">Dropdown Menu</a>
@@ -33,62 +46,73 @@ const Navbar = () => {
                             <label for="showMega" class="mobile-item">Dissertation Writing</label>
                             <div class="mega-box">
                                 <div class="content-1">
-                                    
                                     <div class="row row-1">
                                         <ul class="mega-links">
-                                            <li><a href="#">Buy dissertation UK</a></li>
-                                            <li><a href="#">Cheap dissertation writing </a></li>
-                                            <li><a href="#">Cheap law dissertation</a></li>
-                                            <li><a href="#">Dissertation Abstract</a></li>
+                                            <li><Link to="/BuydissertationUK">BuyDissertationUK</Link></li>
+                                            <li><Link to="/CheapdissertationwritingservicesinUK">CheapDissertationWriting </Link></li>
+                                            <li><Link to="/Cheaplawdissertationwritingservice">CheapLawDissertation</Link></li>
+                                            <li><Link to="/DissertationAbstractWritingServices">DissertationAbstract</Link></li>
+                                            <li><Link to="/PhDDataCollectionHelp">PhDDataCollectionHelp</Link></li>
                                         </ul>
                                     </div>
                                     <div class="row">
                                         <ul class="mega-links">
-                                            <li><a href="#">Dissertation Chapter</a></li>
-                                            <li><a href="#">Dissertation conclusion</a></li>
-                                            <li><a href="#">Dissertation Discussion</a></li>
-                                            <li><a href="#">Dissertation Editing</a></li>
-                                        </ul>
+                                            <li><Link to="/DissertationChapterWritingServices">DissertationChapter</Link></li>
+                                            <li><Link to="/Dissertationconclusionwritingservice">DissertationConclusion</Link></li>
+                                            <li><Link to="/DissertationDiscussionWritingServices">DissertationDiscussion</Link></li>
+                                            <li><Link to="/DissertationEditingandProofreadingServices">DissertationEditing</Link></li>
+                                            <li><Link to="/DissertationDataAnalysisServices">DissertationDataAnalysis</Link></li>
+                                       </ul>
                                     </div>
                                     <div class="row">
                                         <ul class="mega-links">
-                                            <li><a href="#">Dissertation Formatting</a></li>
-                                            <li><a href="#">Dissertation Introduction</a></li>
-                                            <li><a href="#">Dissertation Methodology</a></li>
-                                            <li><a href="#">Dissertation Poster</a></li>
+                                            <li><Link to="/DissertationFormattingService">DissertationFormatting</Link></li>
+                                            <li><Link to="/DissertationIntroductionWritingService">DissertationIntroduction</Link></li>
+                                            <li><Link to="/DissertationMethodologyHelp">DissertationMethodology</Link></li>
+                                            <li><Link to="/DissertationPosterDesigningServices">DissertationPoster</Link></li>
+                                            <li><Link to="/DissertationWritingServices">DissertationWriting</Link></li>
                                         </ul>
                                     </div>
 
                                     <div class="row">
                                         <ul className='mega-links'>
-                                            <li><a href="#">Dissertation Presentation</a></li>
-                                            <li><a href="#">Dissertation Proposal</a></li>
-                                            <li><a href="#">Literature Review Help</a></li>
-                                            <li><a href="#">Masters Dissertation</a></li>
+                                            <li><Link to="/DissertationPresentationWritingServices">DissertationPresentation</Link></li>
+                                            <li><Link to="/DissertationProposal">DissertationProposal</Link></li>
+                                            <li><Link to="/LiteratureReviewHelp">LiteratureReviewHelp</Link></li>
+                                            <li><Link to="/MastersDissertationProposalHelp">MastersDissertation</Link></li>
+                                            <li><Link to="/PrimaryDataCollectionHelp">PrimaryDataCollection</Link></li>
                                         </ul>
                                     </div>
 
                                     <div class="row">
                                         <ul className='mega-links'>
-                                            <li><a href="#">MBA Dissertation Proposal</a></li>
-                                            <li><a href="#">Online Dissertation Help</a></li>
-                                            <li><a href="#">PhD dissertation editing</a></li>
-                                            <li><a href="#">PhD Dissertation Proposal</a></li>
+                                            <li><Link to="/MBADissertationProposalHelp">MBADissertationProposal</Link></li>
+                                            <li><Link to="/OnlineDissertationHelp">OnlineDissertationHelp</Link></li>
+                                            <li><Link to="/PhDdissertationeditingservices">PhDdissertationediting</Link></li>
+                                            <li><Link to="/PhDDissertationProposalHelp">PhDDissertationProposal</Link></li>
                                         </ul>
                                     </div>
 
                                     <div class="row">
                                         <ul className='mega-links'>
-                                            <li><a href="#">PhD Qualitative Data Analysis</a></li>
-                                            <li><a href="#">Qualitative Data Dissertation</a></li>
-                                            <li><a href="#">Research DataCollection</a></li>
-                                            <li><a href="#">Write My Dissertation UK</a></li>
+                                            <li><Link to="/PhDQualitativeDataAnalysisservices">PhDQualitativeData</Link></li>
+                                            <li><Link to="/QualitativeDataDissertationServices">QualitativeDataDissertation</Link></li>
+                                            <li><Link to="/ResearchDataCollectionServices">ResearchDataCollection</Link></li>
+                                            <li><Link to="/WriteMyDissertationUK">WriteMyDissertationUK</Link></li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <li><a href="#">Review</a></li>
+                        <li><Link to="/reviews">Review</Link></li>
+                        <li>
+                            <a className='anchor-button' href='#'>Get Started</a>
+                        </li>
+
+                        <li>
+                            <Link  className='anchor-button' to='/order'>Order Now</Link>
+                        </li>
+
                     </ul>
                     <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
                 </div>

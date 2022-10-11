@@ -5,11 +5,12 @@ import Section1 from '../WhyChooseUs/Section1'
 import PopularQuestions from '../../sections/PopularQuestions'
 import Footers from '../../sections/Footers'
 import Footer from '../../sections/Footer'
+import Navbar from '../../../components/Navbar/Navbar'
 
 const WhyChooseUs = () => {
   return (
     <>
-        <Navbars />
+        <Navbar />
         <section id='WhyChooseUse'>
             <Container className="py-5">
                 <Row>

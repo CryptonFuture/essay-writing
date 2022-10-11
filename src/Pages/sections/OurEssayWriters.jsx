@@ -41,6 +41,7 @@ const OurEssayWriters = () => {
                                     // spaceBetween={30}
                                     // slidesPerView={3}
                                     breakpoints={{
+                                        
                                         940: {
                                             slidesPerView: 4,
                                             spaceBetween: 20
@@ -114,15 +115,15 @@ const OurEssayWriters = () => {
                                                         <img src={Group3} className="images" />
 
                                                         <span className='ms-3 span-text'>
-                                                            Competence
-                                                            <h5 className='text-font'>English, Literature, Writing Studies, Philosophy,Communication</h5>
+                                                            
+                                                            <h5 className='text-font'>Competence in English Literature</h5>
                                                         </span>
                                                     </div>
                                                 </Row>
 
                                                 <Card.Body>
                                                     <div className='d-flex flex-row justify-content-md-center'>
-                                                        <Button className='bg-prim'>Hire Writer</Button>
+                                                        <Button className='bg-prim mt-3'>Hire Writer</Button>
                                                     </div>
                                                 </Card.Body>
                                             </Card>
@@ -135,11 +136,11 @@ const OurEssayWriters = () => {
                                                 <div className='d-flex flex-row'>
                                                     <Card.Img variant="top" src={Avatar1} className="img-avatar" />
                                                     <span className='ms-2'>
-                                                        <span className='fw-bolder'>Hannah</span>
+                                                        <span className='fw-bolder'>Barbara</span>
                                                         <div className='d-flex flex-row mt-2'>
                                                             <RatingStar /> <span className='reviews ms-2'>4.8</span>
                                                         </div>
-                                                        <p className='reviews-1'>150 Reviews</p>
+                                                        <p className='reviews-1'>115  Reviews</p>
                                                     </span>
 
 
@@ -152,14 +153,14 @@ const OurEssayWriters = () => {
 
                                                         <span className='ms-3 span-text'>
                                                             Finish Orders:
-                                                            <h5 className='fw-bolder'>1760</h5>
+                                                            <h5 className='fw-bolder'>1245</h5>
                                                         </span>
 
                                                         <img src={Group2} className="images ms-3" />
 
                                                         <span className='ms-3 span-text'>
                                                             Success Rate:
-                                                            <h5 className='fw-bolder'>1760</h5>
+                                                            <h5 className='fw-bolder'>1245</h5>
                                                         </span>
 
 
@@ -173,15 +174,15 @@ const OurEssayWriters = () => {
                                                         <img src={Group3} className="images" />
 
                                                         <span className='ms-3 span-text'>
-                                                            Competence
-                                                            <h5 className='text-font'>English, Literature, Writing Studies, Philosophy,Communication</h5>
+                                                            
+                                                            <h5 className='text-font'>Competence in Law, Writing Studies</h5>
                                                         </span>
                                                     </div>
                                                 </Row>
 
                                                 <Card.Body>
                                                     <div className='d-flex flex-row justify-content-md-center'>
-                                                        <Button className='bg-prim'>Hire Writer</Button>
+                                                        <Button className='bg-prim  mt-3'>Hire Writer</Button>
                                                     </div>
                                                 </Card.Body>
                                             </Card>
@@ -198,7 +199,7 @@ const OurEssayWriters = () => {
                                                         <div className='d-flex flex-row mt-2'>
                                                             <RatingStar /> <span className='reviews ms-2'>4.8</span>
                                                         </div>
-                                                        <p className='reviews-1'>126 reviews</p>
+                                                        <p className='reviews-1'>150 reviews</p>
                                                     </span>
 
 
@@ -211,14 +212,14 @@ const OurEssayWriters = () => {
 
                                                         <span className='ms-3 span-text'>
                                                             Finish Orders:
-                                                            <h5 className='fw-bolder'>1482</h5>
+                                                            <h5 className='fw-bolder'>1760</h5>
                                                         </span>
 
                                                         <img src={Group2} className="images ms-3" />
 
                                                         <span className='ms-3 span-text'>
                                                             Success Rate:
-                                                            <h5 className='fw-bolder'>1482</h5>
+                                                            <h5 className='fw-bolder'>1760</h5>
                                                         </span>
 
 
@@ -232,15 +233,14 @@ const OurEssayWriters = () => {
                                                         <img src={Group3} className="images" />
 
                                                         <span className='ms-3 span-text'>
-                                                            Competence
-                                                            <h5 className=' text-font'>English, Literature, Writing Studies, Philosophy,Communication</h5>
+                                                            <h5 className=' text-font'>Competence in IT</h5>
                                                         </span>
                                                     </div>
                                                 </Row>
 
                                                 <Card.Body>
                                                     <div className='d-flex flex-row justify-content-md-center'>
-                                                        <Button className='bg-prim'>Hire Writer</Button>
+                                                        <Button className='bg-prim  mt-3'>Hire Writer</Button>
                                                     </div>
                                                 </Card.Body>
                                             </Card>
@@ -258,7 +258,7 @@ const OurEssayWriters = () => {
                                                         <div className='d-flex flex-row mt-2'>
                                                             <RatingStar /> <span className='reviews ms-2'>4.8</span>
                                                         </div>
-                                                        <p className='reviews-1'>126 reviews</p>
+                                                        <p className='reviews-1'>134 reviews</p>
                                                     </span>
 
 
@@ -271,14 +271,14 @@ const OurEssayWriters = () => {
 
                                                         <span className='ms-3 span-text'>
                                                             Finish Orders:
-                                                            <h5 className='fw-bolder'>1482</h5>
+                                                            <h5 className='fw-bolder'>1567</h5>
                                                         </span>
 
                                                         <img src={Group2} className="images ms-3" />
 
                                                         <span className='ms-3 span-text'>
                                                             Success Rate:
-                                                            <h5 className='fw-bolder'>1482</h5>
+                                                            <h5 className='fw-bolder'>1567</h5>
                                                         </span>
 
 
@@ -292,15 +292,14 @@ const OurEssayWriters = () => {
                                                         <img src={Group3} className="images" />
 
                                                         <span className='ms-3 span-text'>
-                                                            Competence
-                                                            <h5 className=' text-font'>English, Literature, Writing Studies, Philosophy,Communication</h5>
+                                                            <h5 className=' text-font'>Competence in Finance</h5>
                                                         </span>
                                                     </div>
                                                 </Row>
 
                                                 <Card.Body>
                                                     <div className='d-flex flex-row justify-content-md-center'>
-                                                        <Button className='bg-prim'>Hire Writer</Button>
+                                                        <Button className='bg-prim  mt-3'>Hire Writer</Button>
                                                     </div>
                                                 </Card.Body>
                                             </Card>
@@ -313,11 +312,11 @@ const OurEssayWriters = () => {
                                                 <div className='d-flex flex-row'>
                                                     <Card.Img variant="top" src={Avatar3} className="img-avatar" />
                                                     <span className='ms-2'>
-                                                        <span className='fw-bolder'>Watson</span>
+                                                        <span className='fw-bolder'>Duckett</span>
                                                         <div className='d-flex flex-row mt-2'>
                                                             <RatingStar /> <span className='reviews ms-2'>4.8</span>
                                                         </div>
-                                                        <p className='reviews-1'>126 reviews</p>
+                                                        <p className='reviews-1'>125  reviews</p>
                                                     </span>
 
 
@@ -330,14 +329,14 @@ const OurEssayWriters = () => {
 
                                                         <span className='ms-3 span-text'>
                                                             Finish Orders:
-                                                            <h5 className='fw-bolder'>1482</h5>
+                                                            <h5 className='fw-bolder'>1387</h5>
                                                         </span>
 
                                                         <img src={Group2} className="images ms-3" />
 
                                                         <span className='ms-3 span-text'>
                                                             Success Rate:
-                                                            <h5 className='fw-bolder'>1482</h5>
+                                                            <h5 className='fw-bolder'>1387</h5>
                                                         </span>
 
 
@@ -351,15 +350,14 @@ const OurEssayWriters = () => {
                                                         <img src={Group3} className="images" />
 
                                                         <span className='ms-3 span-text'>
-                                                            Competence
-                                                            <h5 className=' text-font'>English, Literature, Writing Studies, Philosophy,Communication</h5>
+                                                            <h5 className=' text-font'>Competence in Marketing, Writing Studies</h5>
                                                         </span>
                                                     </div>
                                                 </Row>
 
                                                 <Card.Body>
                                                     <div className='d-flex flex-row justify-content-md-center'>
-                                                        <Button className='bg-prim'>Hire Writer</Button>
+                                                        <Button className='bg-prim  mt-3'>Hire Writer</Button>
                                                     </div>
                                                 </Card.Body>
                                             </Card>

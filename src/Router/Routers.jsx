@@ -24,7 +24,7 @@ import DissertationChapterWritingServices from '../Pages/innerPages/Dissertation
 // import Dissertationconclusionwritingservice from '../Pages/innerPages/DissertationWriting/DissertationDiscussionWritingServices'
 import DissertationFormattingService from '../Pages/innerPages/DissertationWriting/DissertationFormattingService'
 import DissertationIntroductionWritingService from '../Pages/innerPages/DissertationWriting/DissertationIntroductionWritingService'
-import DissertationMethodologyHelp from '../Pages/innerPages/DissertationWriting/DissertationMethodologyHelp'
+// import DissertationMethodologyHelp from '../Pages/innerPages/DissertationWriting/DissertationMethodologyHelp'
 import DissertationPresentationWritingServices from '../Pages/innerPages/DissertationWriting/DissertationPresentationWritingServices'
 import OnlineDissertationHelp from '../Pages/innerPages/DissertationWriting/OnlineDissertationHelp'
 import PhDQualitativeDataAnalysisservices from '../Pages/innerPages/DissertationWriting/PhDQualitativeDataAnalysisservices'
@@ -41,17 +41,22 @@ import WriteMyDissertationUK from '../Pages/innerPages/DissertationWriting/Write
 import ResearchDataCollectionServices from '../Pages/innerPages/DissertationWriting/ResearchDataCollectionServices'
 import QualitativeDataDissertationServices from '../Pages/innerPages/DissertationWriting/QualitativeDataDissertationServices'
 import DissertationPosterDesigningServices from '../Pages/innerPages/DissertationWriting/DissertationPosterDesigningServices'
+import DissertationMethodologyHelp from '../Pages/innerPages/DissertationWriting/DissertationMethodologyHelp'
+import DissertationDiscussionWritingServices from '../Pages/innerPages/DissertationWriting/DissertationDiscussionWritingServices'
+import PhDDataCollectionHelp from '../Pages/innerPages/DissertationWriting/PhDDataCollectionHelp'
+import Referrals from '../Pages/innerPages/Referrals/Referrals'
+import MoneyBackGuarantee from '../Pages/innerPages/MoneyBackGuarantee/MoneyBackGuarantee'
+import DissertationDataAnalysisServices from '../Pages/innerPages/DissertationWriting/DissertationDataAnalysisServices'
+import DissertationWritingServices from '../Pages/innerPages/DissertationWriting/DissertationWritingServices'
+import PrimaryDataCollectionHelp from '../Pages/innerPages/DissertationWriting/PrimaryDataCollectionHelp'
 
-
-const Routers = () => { 
-        return(        
-               <>
-               <Router>
+const Routers = () => {
+    return (
+        <>
+            <Router>
                 <Routes>
-                <Route path='/' element={<Home />}/>
-                {/* <Route path= '/' element={<DissertationFormattingService />}/> */}
-                {/* <Route path='/' element={<Dissertationconclusionwritingservice />}/> */}
-                    {/* <Route path='/' element={<CheapdissertationwritingservicesinUK />}/> */}
+                    <Route path='/' element={<Home />} />
+
                     <Route path='/BuydissertationUK' element={<BuydissertationUK />} />
                     <Route path='/CheapdissertationwritingservicesinUK' element={<CheapdissertationwritingservicesinUK />} />
                     <Route path='/Cheaplawdissertationwritingservice' element={<Cheaplawdissertationwritingservice />} />
@@ -65,7 +70,24 @@ const Routers = () => {
                     <Route path='/OnlineDissertationHelp' element={<OnlineDissertationHelp />} />
                     <Route path='/PhDQualitativeDataAnalysisservices' element={<PhDQualitativeDataAnalysisservices />} />
                     <Route path='/LiteratureReviewHelp' element={<LiteratureReviewHelp />} />
+                    <Route path='/DissertationEditingandProofreadingServices' element={<DissertationEditingandProofreadingServices />} />
+                    <Route path='/MastersDissertationProposalHelp' element={<MastersDissertationProposalHelp />} />
+                    <Route path='/MBADissertationProposalHelp' element={<MBADissertationProposalHelp />} />
+                    <Route path='/PhDdissertationeditingservices' element={<PhDdissertationeditingservices />} />
+                    <Route path='/PhDDissertationProposalHelp' element={<PhDDissertationProposalHelp />} />
+                    <Route path='/DissertationProposal' element={<DissertationProposal />} />
+                    <Route path='/WriteMyDissertationUK' element={<WriteMyDissertationUK />} />
+                    <Route path='/ResearchDataCollectionServices' element={<ResearchDataCollectionServices />} />
+                    <Route path='/QualitativeDataDissertationServices' element={<QualitativeDataDissertationServices />} />
+                    <Route path='/DissertationPosterDesigningServices' element={<DissertationPosterDesigningServices />} />
+                    <Route path='/DissertationDiscussionWritingServices' element={<DissertationDiscussionWritingServices />} />
+                    <Route path='/PhDDataCollectionHelp' element={<PhDDataCollectionHelp />} />
+                    <Route path='/DissertationDataAnalysisServices' element={<DissertationDataAnalysisServices />} />
+                    <Route path='/DissertationWritingServices' element={<DissertationWritingServices />} />
+                    <Route path='/PrimaryDataCollectionHelp' element={<PrimaryDataCollectionHelp />} />
 
+
+                    <Route path='/MoneyBackGuarantee' element={<MoneyBackGuarantee />} />
                     <Route path='/about-us' element={<AboutsUs />} />
                     <Route path='/faqs' element={<Faqs />} />
                     <Route path='/how-it-work' element={<HowItWork />} />

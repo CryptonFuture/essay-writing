@@ -4,11 +4,12 @@ import Section from '../Refund/Section'
 import Foot from '../../sections/Foot'
 import Footers from '../../sections/Footers'
 import Footer from '../../sections/Footer'
+import Navbar from '../../../components/Navbar/Navbar'
 
 const Refund = () => {
     return (
         <>
-            <Navbars />
+            <Navbar />
             <Section />
             <Foot />
             <Footer />

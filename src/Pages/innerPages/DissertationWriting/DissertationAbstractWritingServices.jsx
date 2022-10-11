@@ -13,15 +13,16 @@ import Subject from '../../sections/Subject'
 import OurEssayWriters from '../../sections/OurEssayWriters'
 import DummyText from '../../sections/DummyText'
 import Writer from '../../sections/Writer'
+import Navbar from '../../../components/Navbar/Navbar'
 
 const DissertationAbstractWritingServices = () => {
   return (
     <div>
-        <Navbars />
+        <Navbar />
         <section id='DissertationAbstract'>
-          <Container className='py-5 p-5 mt-5'>
+          <Container className='py-5 mt-5'>
             <Row>
-              <Col md={6}>
+              <Col md={7}>
                 <Breadcrumbs />
                 <h1 className='fw-bold'>Dissertation Abstract Writing Service</h1>
                 <p>Scoring an ‘A’ has now become possible with the best Dissertation Abstract Writing Service providers!</p>
@@ -59,7 +60,7 @@ const DissertationAbstractWritingServices = () => {
 
               </Col>
 
-              <Col md={6}>
+              <Col md={5}>
                 <ServiceForm />
               </Col>
             </Row>

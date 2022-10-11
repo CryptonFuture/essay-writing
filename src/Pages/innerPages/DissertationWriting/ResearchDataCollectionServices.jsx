@@ -12,15 +12,16 @@ import OurFeatured from '../../sections/OurFeatured'
 import PopularQuestions from '../../sections/PopularQuestions'
 import Subject from '../../sections/Subject'
 import Writer from '../../sections/Writer'
+import Navbar from '../../../components/Navbar/Navbar'
 
 const ResearchDataCollectionServices = () => {
     return (
         <div>
-            <Navbars />
+            <Navbar />
             <section id="ResearchDataCollectionServices">
-                <Container className='py-5 p-5 mt-5'>
+                <Container className='py-5 mt-5'>
                     <Row>
-                        <Col md={6}>
+                        <Col md={7}>
                             <Breadcrumbs />
                             <h1 className='fw-bold'>Research Data Collection Services</h1>
                             <p>For unmatched Research Data Collection Services From Industry Experts. Keep our name on speed dial! - A Name of perfection</p>
@@ -60,7 +61,7 @@ const ResearchDataCollectionServices = () => {
 
                         </Col>
 
-                        <Col md={6}>
+                        <Col md={5}>
                             <ServiceForm />
                         </Col>
                     </Row>

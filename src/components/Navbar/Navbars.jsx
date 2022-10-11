@@ -47,7 +47,7 @@ const Navbars = () => {
   return (
     <>
 
-      <nav className='navbar active fixed-top navbar-expand-lg '>
+      <nav className={navbar ? 'navbar active': 'navbar fixed-top navbar-expand-lg'}>
         <div className="container">
           <a className="navbar-brand" href="#">
             <img src={Logo1} className="img-logo" />
@@ -74,9 +74,11 @@ const Navbars = () => {
               </li>
             
               <li className="nav-item ms-3">
-                <Button className="btns">
-                  <span> Get Started</span>
-                </Button>
+                <Link to="/order">
+                  <Button className="btns">
+                    <span> Get Started</span>
+                  </Button>
+                </Link>
               </li>
 
               <li className="nav-item ms-3">

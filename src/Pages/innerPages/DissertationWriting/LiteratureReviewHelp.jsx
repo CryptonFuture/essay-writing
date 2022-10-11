@@ -11,15 +11,16 @@ import OurFeatured from '../../sections/OurFeatured'
 import PopularQuestions from '../../sections/PopularQuestions'
 import Subject from '../../sections/Subject'
 import Writer from '../../sections/Writer'
+import Navbar from '../../../components/Navbar/Navbar'
 
 const LiteratureReviewHelp = () => {
   return (
     <div>
-        <Navbars />
+        <Navbar />
         <section id='LiteratureReviewHelp'>
-            <Container className='py-5 p-5 mt-5'>
+            <Container className='py-5 mt-5'>
               <Row>
-                <Col md={6}>
+                <Col md={7}>
                   <Breadcrumbs />
                   <h1 className='fw-bold'>Literature Review Help</h1>
                   <p>Burden off your shoulders and get the best Literature Review Help from market experts!</p>
@@ -58,7 +59,7 @@ const LiteratureReviewHelp = () => {
                   
                 </Col>
 
-                <Col md={6}>
+                <Col md={5}>
                   <ServiceForm />
                 </Col>
               </Row>

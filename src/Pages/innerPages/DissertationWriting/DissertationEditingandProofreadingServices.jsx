@@ -12,15 +12,16 @@ import Subject from '../../sections/Subject'
 import Writer from '../../sections/Writer'
 import PopularQuestions from '../../sections/PopularQuestions'
 import ServiceForm from '../../../components/Card/ServiceForm'
+import Navbar from '../../../components/Navbar/Navbar'
 
 const DissertationEditingandProofreadingServices = () => {
   return (
     <div>
-      <Navbars />
+      <Navbar />
       <section id='DissertationEditing'>
-            <Container className='py-5 p-5 mt-5'>
+            <Container className='py-5 mt-5'>
                 <Row>
-                    <Col md={6}>
+                    <Col md={7}>
                         <Breadcrumbs />
                         <h1>Dissertation Editing and Proofreading Services</h1>
                         <p>Give your dissertation a flawless look with the Best Dissertation Editing and Proofreading services In town!</p>
@@ -58,7 +59,7 @@ const DissertationEditingandProofreadingServices = () => {
 
 
                     </Col>
-                    <Col md={6}>
+                    <Col md={5}>
                         <ServiceForm />
                     </Col>
                 </Row>

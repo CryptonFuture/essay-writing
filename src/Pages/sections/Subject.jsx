@@ -17,7 +17,7 @@ import Line from '../../assets/images/Line.png'
 const Subject = () => {
     return (
         <>
-            <section id='sub-img'>
+            <section>
                 <section id="neon-img">
                     <Container className='py-5' >
                         <Row className='justify-content-md-center '>

@@ -12,15 +12,16 @@ import OurFeatured from '../../sections/OurFeatured'
 import PopularQuestions from '../../sections/PopularQuestions'
 import Subject from '../../sections/Subject'
 import Writer from '../../sections/Writer'
+import Navbar from '../../../components/Navbar/Navbar'
 
 const PhDdissertationeditingservices = () => {
   return (
     <div>
-      <Navbars />
+      <Navbar />
       <section id='PhDdissertation'>
-          <Container className='py-5 p-5 mt-5'>
+          <Container className='py-5 mt-5'>
             <Row>
-              <Col md={6}>
+              <Col md={7}>
                 <Breadcrumbs />
                 <h1 className='fw-bold'>Ph.D. dissertation editing services</h1>
                 <p>Get the Best and Cheapest Ph.D. dissertation Editing Services in the UK Market now!</p>
@@ -59,7 +60,7 @@ const PhDdissertationeditingservices = () => {
 
               </Col>
 
-              <Col md={6}>
+              <Col md={5}>
                 <ServiceForm />
               </Col>
             </Row>

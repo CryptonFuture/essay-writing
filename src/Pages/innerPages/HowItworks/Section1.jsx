@@ -27,41 +27,41 @@ const Section1 = () => {
                             </div> */}
 
                             <div className='timeline'>
-                                <div className='container-1 left-container'>
+                                <div className='container-3 left-container'>
                                     <img src={icondot} alt="" />
-                                    <div className='text-box'>
-                                        <h2>Alphabet Inc.</h2>
-                                        <small>2018 - 2019</small>
+                                    <div className='text-box text-box1 flip-right'>
+                                        <h2>Fill Out an Order Form</h2>
+                                        {/* <img src={rectangle} /> */}
+                                        {/* <small>2018 - 2019</small> */}
                                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum quas est obcaecati! Nesciunt suscipit alias iure cupiditate at. Repellat, consequuntur! Modi, quo. Accusantium sunt quisquam rem esse laudantium. Rem, ut.</p>
-                                        <span className='left-container-arrow'></span>
+                                        <span className='left-container-arrow left-container-arrow-1'></span>
                                     </div>
                                 </div>
 
-                                <div className='container-1 right-container'>
-                                <img src={icondot2} alt="" />
-
+                                <div className='container-3 right-container'>
+                                    <img src={icondot2} alt="" />
                                     <div className='text-box'>
-                                        <h2>Alphabet Inc.</h2>
-                                        <small>2018 - 2019</small>
+                                        <h2>Choose Your Helper</h2>
+                                        {/* <small>2018 - 2019</small> */}
                                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum quas est obcaecati! Nesciunt suscipit alias iure cupiditate at. Repellat, consequuntur! Modi, quo. Accusantium sunt quisquam rem esse laudantium. Rem, ut.</p>
-                                        <span className='right-container-arrow'></span>
+                                        <span className='right-container-arrow right-container-arrow-2'></span>
 
                                     </div>
                                 </div>
 
-                                <div className='container-1 left-container'>
+                                <div className='container-3 left-container'>
                                 <img src={icondot3} alt="" />
 
-                                    <div className='text-box'>
-                                        <h2>Alphabet Inc.</h2>
-                                        <small>2018 - 2019</small>
+                                    <div className='text-box text-box2 flip-right'>
+                                        <h2>Check & Pay</h2>
+                                        {/* <small>2018 - 2019</small> */}
                                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum quas est obcaecati! Nesciunt suscipit alias iure cupiditate at. Repellat, consequuntur! Modi, quo. Accusantium sunt quisquam rem esse laudantium. Rem, ut.</p>
-                                        <span className='left-container-arrow'></span>
+                                        <span className='left-container-arrow left-container-arrow-3'></span>
 
                                     </div>
                                 </div>
 
-                                <div className='container-1 right-container'>
+                                {/* <div className='container-3 right-container'>
                                 <img src={icondot} alt="" />
                                     <div className='text-box'>
                                         <h2>Alphabet Inc.</h2>
@@ -70,7 +70,7 @@ const Section1 = () => {
                                         <span className='right-container-arrow'></span>
 
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
 
                             

@@ -9,11 +9,12 @@ import Footer from '../../../Pages/sections/Footers'
 import Footers from '../../../Pages/sections/Footer'
 import Layer from '../../../assets/images/AboutUs/Layer.png'
 import Section3 from './Section3'
+import Navbar from '../../../components/Navbar/Navbar'
 
 const AboutsUs = () => {
   return (
     <>
-      <Navbars />
+      <Navbar />
       <section id='about-bg'>
         <Container className="py-5 about-container">
           <Row className='justify-content-center'>

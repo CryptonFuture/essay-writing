@@ -5,12 +5,13 @@ import Section from '../../innerPages/Order/Section'
 import Foot from '../../sections/Foot'
 import Footer from '../../sections/Footer'
 import Footers from '../../sections/Footers'
+import Navbar from '../../../components/Navbar/Navbar'
 
 const Order = () => {
   return (
     <>
     <section id="orderNow">
-      <Navbars />
+      <Navbar />
       <Container className='py-5 p-5 mt-5'>
           
         <Row className='justify-content-center'>

@@ -12,25 +12,31 @@ import { Link } from 'react-router-dom'
 import { slice } from 'lodash'
 import Swal from 'sweetalert2'
 import parse from 'html-react-parser';
+import { Image } from 'antd';
 
 
-const ReadMore = ({ children }) => {
+const ReadMore = ({ children, maxCharacterCount = 100 }) => {
     const text = children
-    const [isReadMore, setIsReadMore] = useState(true)
 
-    const toggleReadMore = () => {
-        setIsReadMore(!isReadMore)
+    const [isTruncated, setIsTruncated] = useState(true)
+
+    const resultString = isTruncated ? text.slice(0, maxCharacterCount) : text
+
+    const toggleIsTrincated = () => {
+        setIsTruncated(!isTruncated)
     }
 
     return (
         <p>
-            {isReadMore ? text.slice(0, 150) : text}
-            <span onClick={toggleReadMore}>
-                {isReadMore ? <p className='fw-bold cursors'>...read more</p> : <p className='text-danger cursors'>show less</p>}
+            <div dangerouslySetInnerHTML={{__html: resultString}}></div>
+            <span className='fw-bold cursors' onClick={toggleIsTrincated}>
+                {isTruncated ? "...ReadMore" : "...ReadLess"}
             </span>
         </p>
     )
 }
+
+
 
 function simulateNetworkRequest() {
     return new Promise((resolve) => setTimeout(resolve, 2000))
@@ -84,33 +90,37 @@ const BlogSection = () => {
         }
     }, [isLoading])
 
-   
-
+  
     return (
         <>
             <Container className='py-5 p-5 mt-5'>
                 <Row>
 
                     {
-                      data.map((blogs, index) => {
-                            return  (
-                                <Col md={4} className="mt-3">
+                        data.map((blogs, index) => {
+                            return (
+                                <Col md={4} sm={4} lg={4} className="mt-3">
                                     <Card className='border-0 shadow' key={index}>
-                                        <Card.Img variant="top" src={blogs.img} />
+                                        {/* <Card.Img onClick={(e) => thumbnail(e, 'hello')} variant="top" src={blogs.img} /> */}
+                                        <Image
+                                            // width={200}
+                                            src={blogs.img}
+                                        />
+
                                         <Card.Body className="p-3">
-                                            <div className='d-flex flex-row'>
+                                            {/* <div className='d-flex flex-row'>
                                                 <small style={{ color: 'gray' }}><i class="fa-regular fa-calendar"></i> August 10, 2022</small>
                                                 <small className='ms-5' style={{ color: 'gray' }}><i class="fa-regular fa-eye"></i> 811 views</small>
-                                            </div>
+                                            </div> */}
                                             <Card.Title className='fw-bold mt-3'>{blogs.title}</Card.Title>
                                             <Card.Text className='blog_font_size'>
-                                                
-                                                <ReadMore>
+
+                                                <ReadMore maxCharacterCount={100}>
                                                     {blogs.short_des}
                                                 </ReadMore>
                                             </Card.Text>
                                             <Card.Text className='blog_font_size'>
-                                                <ReadMore>
+                                                <ReadMore maxCharacterCount={200}>
                                                     {blogs.long_des}
                                                 </ReadMore>
                                             </Card.Text>
@@ -123,7 +133,7 @@ const BlogSection = () => {
                             )
                         })}
 
-                       
+
 
                     {/* <Col md={4}>
                         <Card className='border-0 shadow'>
@@ -142,8 +152,8 @@ const BlogSection = () => {
                             </Card.Body>
                         </Card>
                     </Col> */}
-
-                    {/* <Col md={4}>
+{/* 
+                    <Col md={7} sm={3} lg={2}>
                         <h6 className='fw-bold'>Search</h6>
                         <hr />
                         <InputGroup className='mb-3'>
@@ -326,15 +336,14 @@ const BlogSection = () => {
             
                 </Row>  */}
                 <Row className='justify-content-center mt-5'>
-                    <Col md={6}>
-                        {/* <div className='d-flex flex-row justify-content-center'>
+                    <Col md={6} sm={6} lg={6}>
+                        <div className='d-flex flex-row justify-content-center'>
                             <Button variant="primary" className='blog_button' onClick={!isLoading ? loadMore : null}>
                                 {isLoading ? <Spinner animation="border" role="status" size="sm">
                                     <span className="visually-hidden">Loading...</span>
                                 </Spinner> : 'Load More '}
-
                             </Button>
-                        </div> */}
+                        </div>
                     </Col>
                 </Row>
             </Container>

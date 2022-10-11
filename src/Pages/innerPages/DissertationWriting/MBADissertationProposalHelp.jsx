@@ -12,15 +12,16 @@ import Subject from '../../sections/Subject'
 import Writer from '../../sections/Writer'
 import OurEssayWriters from '../../sections/OurEssayWriters'
 import ServiceForm from '../../../components/Card/ServiceForm'
+import Navbar from '../../../components/Navbar/Navbar'
 
 const MBADissertationProposalHelp = () => {
   return (
     <div>
-      <Navbars />
+      <Navbar />
       <section id='MBADissertation'>
-        <Container className='py-5 p-5 mt-5'>
+        <Container className='py-5 mt-5'>
           <Row>
-            <Col md={6}>
+            <Col md={7}>
                 <Breadcrumbs />
                 <h1 className='fw-bold'>MBA Dissertation Proposal Help</h1>
                 <p>Kick-start your Dissertation as the Best MBA Dissertation Proposal Help is here to assist!</p>
@@ -56,7 +57,7 @@ const MBADissertationProposalHelp = () => {
                 <p>Enabling our client's full privacy for the order placed, we never compromise on such things</p>
             </Col>
 
-            <Col md={6}>
+            <Col md={5}>
               <ServiceForm />
             </Col>
           </Row>

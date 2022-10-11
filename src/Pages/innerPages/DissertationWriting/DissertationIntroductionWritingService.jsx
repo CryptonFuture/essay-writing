@@ -13,15 +13,16 @@ import OurFeatured from '../../sections/OurFeatured'
 import Subject from '../../sections/Subject'
 import OurEssayWriters from '../../sections/OurEssayWriters'
 import DummyText from '../../sections/DummyText'
+import Navbar from '../../../components/Navbar/Navbar'
 
 const DissertationIntroductionWritingService = () => {
     return (
         <div>
-            <Navbars />
+            <Navbar />
             <section id='DissertationIntroduction'>
-                <Container className='py-5 p-5 mt-5'>
+                <Container className='py-5 mt-5'>
                     <Row>
-                        <Col md={6}>
+                        <Col md={7}>
                             <Breadcrumbs />
                             <h1 className='fw-bold'>Dissertation Introduction Writing Service</h1>
                             <p>Kick-start Your Dissertation With Our Dissertation Introduction Writing Service and score an ‘A’ Grade now!</p>
@@ -59,7 +60,7 @@ const DissertationIntroductionWritingService = () => {
                         
                         </Col>
 
-                        <Col md={6}>
+                        <Col md={5}>
                             <ServiceForm />
                         </Col>
                     </Row>

@@ -15,16 +15,16 @@ import OurEssayWriters from '../../sections/OurEssayWriters'
 import DummyText from '../../sections/DummyText'
 import CardForm from '../../../components/Card/CardForm'
 import Writer from '../../sections/Writer'
+import Navbar from '../../../components/Navbar/Navbar'
 
 const BuydissertationUK = () => {
   return (
-
     <div>
-      <Navbars />
+      <Navbar />
       <section id='BuydissertationUK'>
-        <Container className='py-5 p-5 mt-5'>
+        <Container className='py-5  mt-5'>
           <Row>
-            <Col md={6}>
+            <Col md={7}>
               <Breadcrumbs />
               <h1 className='fw-bold'>Buy dissertation UK</h1>
               <p>Buy Dissertation UK from the Best Service providers in town and impress your Supervisors!</p>
@@ -60,7 +60,7 @@ const BuydissertationUK = () => {
               <p>Enabling our client's full privacy for the order placed, we never compromise on such things</p>
             </Col>
 
-            <Col md={6}>
+            <Col md={5}>
                 <ServiceForm />
             </Col>
           </Row>

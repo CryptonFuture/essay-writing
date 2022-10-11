@@ -14,15 +14,16 @@ import OurEssayWriters from '../../sections/OurEssayWriters'
 import DummyText from '../../sections/DummyText'
 import CardForm from '../../../components/Card/CardForm'
 import Writer from '../../sections/Writer'
+import Navbar from '../../../components/Navbar/Navbar'
 
 const CheapdissertationwritingservicesinUK = () => {
   return (
     <div>
-        <Navbars />
+        <Navbar />
         <section id='Cheapdissertation'>
-          <Container className='py-5 p-5 mt-5'>
+          <Container className='py-5 mt-5'>
             <Row>
-              <Col md={6}>
+              <Col md={7}>
                 <Breadcrumbs />
                 <h1 className='fw-bold'>Cheap dissertation writing services in UK</h1>
                 <p>Cheap Dissertation Writing Services in UK now become easy with our exemplary services!</p>
@@ -58,7 +59,7 @@ const CheapdissertationwritingservicesinUK = () => {
                 <p>Enabling our client's full privacy for the order placed, we never compromise on such things</p>
               </Col>
 
-              <Col md={6}>
+              <Col md={5}>
                   <ServiceForm />
               </Col>
             </Row>

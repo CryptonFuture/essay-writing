@@ -11,8 +11,11 @@ const Section = () => {
                 <Container className=''>
                     <Row className="align-items-center">
                         <Col md={6} className="mt-5 cols-h1">
-                            <h1 className='fw-bold'>Money Back Guarantee</h1>
-                            <p className='fs-7'>Dissertation Proposal provides a money-back guarantee feature to our customers so that they can appeal for reimbursement. If the reimbursement request can't be placed in any of the scenarios mentioned below, the customer must notify the customer support team time for the discussion of the matter, and the application will be processed.</p>
+                            <h1 className='fw-bold'>Looking for the best
+                                quality essay, experienced
+                                writers, and extraordinary
+                                client relations?</h1>
+                            <p className='fs-7'>Trust us, with CheapestEssay; you’ll get all these when you avail our essay writing services. At CheapestEssay, we completely understand how tough it gets to lay your trust in someone else with your custom academic writing. That’s the reason we guarantee you complete confidentiality of your data, 100% refund, etc. Read on to know more about our guarantees.</p>
                             <div className='buttons'>
                                 <Button className='bg-purple'>Get Started</Button>
 

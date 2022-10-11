@@ -12,15 +12,16 @@ import Subject from '../../sections/Subject'
 import Writer from '../../sections/Writer'
 import CustomerReview from '../../sections/CustomerReview'
 import ServiceForm from '../../../components/Card/ServiceForm'
+import Navbar from '../../../components/Navbar/Navbar'
 
 const PhDDissertationProposalHelp = () => {
   return (
     <div>
-        <Navbars />
+        <Navbar />
         <section id='PhDDissertation'>
-            <Container className='py-5 p-5 mt-5'>
+            <Container className='py-5 mt-5'>
                 <Row>
-                    <Col md={6}>
+                    <Col md={7}>
                         <Breadcrumbs />
                         <h1 className='fw-bold'>Ph.D. Dissertation Proposal Help</h1>
                         <p>Score an ‘A’ grade with our Ph.D. Dissertation Proposal Help!</p>
@@ -59,7 +60,7 @@ const PhDDissertationProposalHelp = () => {
                         
                     </Col>
 
-                    <Col md={6}>
+                    <Col md={5}>
                         <ServiceForm />
                     </Col>      
                 </Row>

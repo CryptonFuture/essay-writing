@@ -13,15 +13,16 @@ import OurFeatured from '../../sections/OurFeatured'
 import PopularQuestions from '../../sections/PopularQuestions'
 import Subject from '../../sections/Subject'
 import Writer from '../../sections/Writer'
+import Navbar from '../../../components/Navbar/Navbar'
 
 const DissertationMethodologyHelp = () => {
     return (
         <div>
-            <Navbars />
+            <Navbar />
             <section id='DissertationMethodology'>
-                <Container className='py-5 p-5 mt-5'>
+                <Container className='py-5 mt-5'>
                     <Row>
-                        <Col md={6}>
+                        <Col md={7}>
                             <Breadcrumbs />
                             <h1 className='fw-bold'>Dissertation Methodology Help</h1>
                             <p>Claiming the best Dissertation Methodology Help, We deliver what we claim!</p>
@@ -60,7 +61,7 @@ const DissertationMethodologyHelp = () => {
 
                         </Col>
 
-                        <Col md={6}>
+                        <Col md={5}>
                             <ServiceForm />
                         </Col>
                     </Row>

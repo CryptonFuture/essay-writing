@@ -7,11 +7,12 @@ import Foot from '../../../Pages/sections/Foot'
 import Footer from '../../../Pages/sections/Footers'
 import Footers from '../../../Pages/sections/Footer'
 import Layer from '../../../assets/images/AboutUs/Layer.png'
+import Navbar from '../../../components/Navbar/Navbar'
 
 const Reviews = () => {
     return (
         <>
-            <Navbars />
+            <Navbar />
             <section id='reviews'>
                 <Container>
                     <Row>

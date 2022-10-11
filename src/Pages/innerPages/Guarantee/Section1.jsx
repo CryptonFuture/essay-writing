@@ -17,7 +17,7 @@ const Section1 = ({ img, title, description }) => {
     return (
         <>
             <Col md={4} className="mt-4">
-                <Card className='border-0 shadow card-transistions'>
+                <Card className='border-0 shadow card-transistions p-3'>
                     <Card.Body>
                         <Card.Title><img src={img} className="img-gurantee" /> <span className='fw-bold ms-2 fonted'>{title}</span></Card.Title>
                         <Card.Text>

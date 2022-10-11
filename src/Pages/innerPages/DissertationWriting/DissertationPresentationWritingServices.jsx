@@ -13,15 +13,16 @@ import PopularQuestions from '../../sections/PopularQuestions'
 import Subject from '../../sections/Subject'
 import Writer from '../../sections/Writer'
 import OurEssayWriters from '../../sections/OurEssayWriters'
+import Navbar from '../../../components/Navbar/Navbar'
 
 const DissertationPresentationWritingServices = () => {
     return (
         <div>
-            <Navbars />
+            <Navbar />
             <section id='DissertationPresentation'>
-                <Container className='py-5 p-5 mt-5'>
+                <Container className='py-5 mt-5'>
                     <Row>
-                        <Col md={6}>
+                        <Col md={7}>
                             <Breadcrumbs />
                             <h1 className='fw-bold'>Dissertation Presentation Writing Services</h1>
                             <p>Custom-made Dissertation Presentation Writing Services from top-notch service providers have now become easy! Reach us and avail the best in town</p>
@@ -60,7 +61,7 @@ const DissertationPresentationWritingServices = () => {
 
                         </Col>
 
-                        <Col md={6}>
+                        <Col md={5}>
                             <ServiceForm />
                         </Col>
                     </Row>

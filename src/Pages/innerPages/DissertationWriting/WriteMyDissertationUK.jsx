@@ -12,15 +12,16 @@ import OurFeatured from '../../sections/OurFeatured'
 import PopularQuestions from '../../sections/PopularQuestions'
 import Subject from '../../sections/Subject'
 import Writer from '../../sections/Writer'
+import Navbar from '../../../components/Navbar/Navbar'
 
 const WriteMyDissertationUK = () => {
   return (
     <div>
-        <Navbars />
+        <Navbar />
         <section id='WriteMyDissertationUK'>
-            <Container className='py-5 p-5 mt-5'>
+            <Container className='py-5 mt-5'>
                 <Row>
-                    <Col md={6}>
+                    <Col md={7}>
                         <Breadcrumbs />
                         <h1>Write My Dissertation UK</h1>
                         <p>Are you the one who seeks to write my Dissertation UK? You’re in the place to get assistance from scratch till the end!</p>
@@ -57,7 +58,7 @@ const WriteMyDissertationUK = () => {
                         <p>Enabling our client's full privacy for the order placed, we never compromise on such things</p>
 
                     </Col>
-                    <Col md={6}>
+                    <Col md={5}>
                         <ServiceForm />
                     </Col>
                 </Row>

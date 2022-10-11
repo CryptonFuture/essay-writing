@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../../../components/Navbar/Navbars'
 import { Container, Col, Row } from 'react-bootstrap'
 import Section1 from '../HowItworks/Section1'
 import PopularQuestions from '../../sections/PopularQuestions'
@@ -7,6 +6,7 @@ import Footer from '../../../Pages/sections/Footers'
 import Footers from '../../../Pages/sections/Footer'
 import Section2 from '../HowItworks/Section2'
 import Layer from '../../../assets/images/AboutUs/Layer.png'
+import Navbar from '../../../components/Navbar/Navbar'
 
 const HowItWork = () => {
   return (
@@ -24,7 +24,8 @@ const HowItWork = () => {
         </Container>
       </section>
       <Section1 />
-      <Section2 />
+      {/* <Section2 /> */}
+      <PopularQuestions />
        <Footers />
       <Footer /> 
     </>
